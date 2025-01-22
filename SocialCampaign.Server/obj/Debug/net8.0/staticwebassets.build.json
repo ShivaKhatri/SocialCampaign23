@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "9uXQk69b41C3KJ2AU1VcsecYAPdktralONo0+2R2tmI=",
+  "Source": "SocialCampaign.Server",
+  "BasePath": "_content/SocialCampaign.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\socialcampaign.client.esproj",
+      "Version": 2,
+      "Source": "socialcampaign.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
