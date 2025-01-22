@@ -1,0 +1,8 @@
+@SocialCampaign.Server_HostAddress =  https://localhost:53328
+
+GET {{SocialCampaign.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{SocialCampaign.Server_HostAddress}}/api/Users
+Accept: application/json
