@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import { Link } from "react-router-dom";
 const Profile = ({ user }) => (
     <div
         className="card text-center mb-3"
@@ -40,10 +41,12 @@ const Profile = ({ user }) => (
         <div className="card-body" style={{ marginTop: "35px" }}>
             <h5 className="card-title">{user.name}</h5>
             <p className="card-text">{user.role}</p>
-           
-                <button className="btn  btn-outline-primary" onClick={() => alert(`Viewing ${user.name}'s profile`)}>
+           <Link to='/user-profile'>
+          
+                <button className="btn  btn-outline-primary" >
                     View Profile
                 </button>
+                </Link>
             
         </div>
     </div>

@@ -1,5 +1,5 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialCampaign.Server.Models
 {
@@ -13,20 +13,28 @@ namespace SocialCampaign.Server.Models
         public string BusinessName { get; set; }
 
         [Required]
-        [MaxLength(255)]
+        [MaxLength(200)]
         public string Address { get; set; }
 
         [Required]
         [Phone]
-        public string PhoneNumber { get; set; }
+        public string Phone { get; set; }
 
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
         [Required]
-        public string PasswordHash { get; set; }
+        [MaxLength(500)]
+        public string Description { get; set; }
+
+        [Required]
         public DateTime CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
+
+        [Required]
+        public bool IsDeleted { get; set; }
+
     }
 }

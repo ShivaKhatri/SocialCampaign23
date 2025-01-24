@@ -1,0 +1,24 @@
+
+.profile-container{
+  background-color: #e8e8ea;
+  height: 100vh;
+
+}
+.list-element:hover{
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+    .profile-container{
+        flex-direction: column;
+    }
+    .list-options{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .list-element {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }

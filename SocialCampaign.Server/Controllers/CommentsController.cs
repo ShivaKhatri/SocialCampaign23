@@ -11,47 +11,47 @@ namespace SocialCampaign.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CampaignLikesController : ControllerBase
+    public class CommentsController : ControllerBase
     {
         private readonly DatabaseConnection _context;
 
-        public CampaignLikesController(DatabaseConnection context)
+        public CommentsController(DatabaseConnection context)
         {
             _context = context;
         }
 
-        // GET: api/CampaignLikes
+        // GET: api/Comments
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CampaignLike>>> GetCampaignLikes()
+        public async Task<ActionResult<IEnumerable<Comment>>> GetComments()
         {
-            return await _context.CampaignLikes.ToListAsync();
+            return await _context.Comments.ToListAsync();
         }
 
-        // GET: api/CampaignLikes/5
+        // GET: api/Comments/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CampaignLike>> GetCampaignLike(int id)
+        public async Task<ActionResult<Comment>> GetComment(int id)
         {
-            var campaignLike = await _context.CampaignLikes.FindAsync(id);
+            var comment = await _context.Comments.FindAsync(id);
 
-            if (campaignLike == null)
+            if (comment == null)
             {
                 return NotFound();
             }
 
-            return campaignLike;
+            return comment;
         }
 
-        // PUT: api/CampaignLikes/5
+        // PUT: api/Comments/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCampaignLike(int id, CampaignLike campaignLike)
+        public async Task<IActionResult> PutComment(int id, Comment comment)
         {
-            if (id != campaignLike.CampaignLikeId)
+            if (id != comment.CommentId)
             {
                 return BadRequest();
             }
 
-            _context.Entry(campaignLike).State = EntityState.Modified;
+            _context.Entry(comment).State = EntityState.Modified;
 
             try
             {
@@ -59,7 +59,7 @@ namespace SocialCampaign.Server.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CampaignLikeExists(id))
+                if (!CommentExists(id))
                 {
                     return NotFound();
                 }
@@ -72,36 +72,36 @@ namespace SocialCampaign.Server.Controllers
             return NoContent();
         }
 
-        // POST: api/CampaignLikes
+        // POST: api/Comments
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<CampaignLike>> PostCampaignLike(CampaignLike campaignLike)
+        public async Task<ActionResult<Comment>> PostComment(Comment comment)
         {
-            _context.CampaignLikes.Add(campaignLike);
+            _context.Comments.Add(comment);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCampaignLike", new { id = campaignLike.CampaignLikeId }, campaignLike);
+            return CreatedAtAction("GetComment", new { id = comment.CommentId }, comment);
         }
 
-        // DELETE: api/CampaignLikes/5
+        // DELETE: api/Comments/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCampaignLike(int id)
+        public async Task<IActionResult> DeleteComment(int id)
         {
-            var campaignLike = await _context.CampaignLikes.FindAsync(id);
-            if (campaignLike == null)
+            var comment = await _context.Comments.FindAsync(id);
+            if (comment == null)
             {
                 return NotFound();
             }
 
-            _context.CampaignLikes.Remove(campaignLike);
+            _context.Comments.Remove(comment);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool CampaignLikeExists(int id)
+        private bool CommentExists(int id)
         {
-            return _context.CampaignLikes.Any(e => e.CampaignLikeId == id);
+            return _context.Comments.Any(e => e.CommentId == id);
         }
     }
 }

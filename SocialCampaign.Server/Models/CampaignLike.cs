@@ -1,5 +1,5 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialCampaign.Server.Models
 {
@@ -8,13 +8,20 @@ namespace SocialCampaign.Server.Models
         [Key]
         public int CampaignLikeId { get; set; }
 
+        [ForeignKey("Campaign")]
+        [Required]
+        public int CampaignId { get; set; }
+
+        [ForeignKey("User")]
         [Required]
         public int UserId { get; set; }
 
         [Required]
-        public int CampaignId { get; set; }
+        public bool IsBusiness { get; set; } // True for Business, False for User
 
         [Required]
-        public DateTime CreatedAt { get; set; }
+        public DateTime LikedAt { get; set; }
+
+
     }
 }

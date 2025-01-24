@@ -1,34 +1,49 @@
-import React from "react";
-import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Login from './components/Login/Login';
-import Signup from './components/Signup/Signup';
-import Profile from './components/Profile/Profile';
-import Post from './components/Post/Post';
-import Suggestion from './components/Suggestion/Suggestion';
+import { useEffect, useState } from 'react';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Login from './components/login/login'
+import Home from './Pages/Home/Home'
+import Signup from './components/signup/Signup'
+import ForgotPassword from './components/forgot-password/forgot-password'
+import ChangePassword from './components/change-password/change-password'
 import Users from './components/Users/Users';
-import UserList from "./components/UserList";
-function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Navbar />
-                <main>
-                    <Routes>
-                        <Route path="/" element={<Login />} /> {/* Home route displays UserList */}
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/signup" element={<Signup />} />
-                        <Route path="/profile" element={<Profile />} />
-                        <Route path="/post" element={<Post />} />
-                        <Route path="/suggestion" element={<Suggestion />} />
-                        <Route path="/users" element={<Users />} />
-                    </Routes>
-                    
-                </main>
-            </div>
-        </Router>
-    );
-}
+import './App.css';
+import UserProfile from './Pages/UserProfile/UserProfile';
 
-export default App;
+function App() {
+    const route = createBrowserRouter([
+      {
+        path: "/",
+        element: <Login />,
+      },
+      {
+        path: "/users",
+        element: <Users />,
+      },
+      {
+        path: "/user-profile",
+        element: <UserProfile />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword />,
+      },
+      {
+        path: "/change-password",
+        element: <ChangePassword />,
+      },
+    ]);
+    return (
+      <div className="App">
+        <RouterProvider router={route}> </RouterProvider>
+      </div>
+    );
+  }
+  export default App;

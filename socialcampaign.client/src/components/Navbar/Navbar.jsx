@@ -14,17 +14,16 @@ const Navbar = () => {
     return (
         <nav className="navbar px-4 bg-primary">
             <div className="navbar-logo">
-                <Link to='/'>
-                    <h3 className='text-white'>AwarenessApp</h3>
+                <Link to='/home'>
+               
+                <h3  className='text-white'>AwarenessApp</h3>
                 </Link>
             </div>
             <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-                <Link to="/login">Login</Link>
-                <Link to="/signup">Signup</Link>
-                <Link to="/profile">Profile</Link>
-                <Link to="/post">Post</Link>
-                <Link to="/suggestion">Suggestion</Link>
-                <Link to="/users">Users</Link>
+                <a href="#compaigns">Campaigns</a>
+                <a href="#business-advertisements">Business Advertisements</a>
+                <a href="#contact">Contact</a>
+                <a href="/">Logout</a>
             </div>
             <div className="navbar-hamburger" onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faBars} />

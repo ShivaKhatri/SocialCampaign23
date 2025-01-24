@@ -3,25 +3,25 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialCampaign.Server.Models
 {
-    public class BusinessAd
+    public class Comment
     {
         [Key]
-        public int BusinessAdId { get; set; }
-
-        [Required]
-        [MaxLength(200)]
-        public string Title { get; set; }
+        public int CommentId { get; set; }
 
         [Required]
         [MaxLength(1000)]
-        public string Description { get; set; }
+        public string Content { get; set; }
 
+        [ForeignKey("Campaign")]
         [Required]
-        public string ImageUrl { get; set; }
+        public int CampaignId { get; set; }
 
-        [ForeignKey("Business")]
+        [ForeignKey("User")]
         [Required]
-        public int BusinessId { get; set; }
+        public int UserId { get; set; }
+
+        [ForeignKey("ParentComment")]
+        public int? ParentCommentId { get; set; } // For reply functionality
 
         [Required]
         public DateTime CreatedAt { get; set; }
@@ -31,6 +31,6 @@ namespace SocialCampaign.Server.Models
         [Required]
         public bool IsDeleted { get; set; }
 
-    
+  
     }
 }
