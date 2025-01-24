@@ -1,0 +1,60 @@
+.campaign-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.campaign-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.campaign-dates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.start-date, .end-date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.campaign-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.campaign-description {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.campaign-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-button, .comment-button {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.campaign-comments {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    margin-bottom: 10px;
+}

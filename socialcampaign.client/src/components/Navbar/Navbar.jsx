@@ -1,32 +1,25 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
     return (
-        <nav className="navbar px-4 bg-primary">
-            <div className="navbar-logo">
-                <Link to='/home'>
-               
-                <h3  className='text-white'>AwarenessApp</h3>
-                </Link>
-            </div>
-            <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-                <a href="#compaigns">Campaigns</a>
-                <a href="#business-advertisements">Business Advertisements</a>
-                <a href="#contact">Contact</a>
-                <a href="/">Logout</a>
-            </div>
-            <div className="navbar-hamburger" onClick={toggleMenu}>
-                <FontAwesomeIcon icon={faBars} />
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/home">AwarenessApp</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
+                        <li className="nav-item">
+                            <Link className="nav-link active" to="/home">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/login">Login</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     );

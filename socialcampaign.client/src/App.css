@@ -1,12 +1,21 @@
-﻿#root {
-    max-width: 1280px;
-  
+﻿/* Ensure the body and app div take full height */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
 }
 
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.app {
+    height: 100%; /* Set app container to take full height */
+    display: flex; /* Use flexbox to allow children to grow */
+    flex-direction: column; /* Ensure elements stack vertically */
 }
-body{
-    background-color: #e8e8ea;
+
+/* Ensuring home-container fills the remaining space */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1; /* Make sure this takes up all available space */
+    min-height: 100vh; /* Ensure full height of the viewport */
+    padding: 0 15px;
+    margin-top: 70px; /* Adjust for the navbar */
 }

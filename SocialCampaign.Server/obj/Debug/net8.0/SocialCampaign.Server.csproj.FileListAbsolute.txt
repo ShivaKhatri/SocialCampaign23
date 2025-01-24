@@ -871,3 +871,6 @@ C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCamp
 C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\obj\Debug\net8.0\SocialCampaign.Server.genruntimeconfig.cache
 C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\obj\Debug\net8.0\ref\SocialCampaign.Server.dll
 C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\obj\Debug\net8.0\SocialCampaign.Server.sourcelink.json
+C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\shiva\OneDrive\Desktop\Stage 3\SocialCampaign\SocialCampaign\SocialCampaign.Server\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

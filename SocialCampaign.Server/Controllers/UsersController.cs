@@ -6,18 +6,32 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SocialCampaign.Server.Models;
+using BCrypt.Net;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Microsoft.Extensions.Configuration; // Add this
+
 
 namespace SocialCampaign.Server.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
+
     public class UsersController : ControllerBase
     {
         private readonly DatabaseConnection _context;
+        private readonly IConfiguration _configuration; // Inject IConfiguration
 
-        public UsersController(DatabaseConnection context)
+        // Constructor to inject DbContext and IConfiguration
+        public UsersController(DatabaseConnection context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         // GET: api/Users
@@ -77,11 +91,29 @@ namespace SocialCampaign.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+            // Check if email already exists
+            if (_context.Users.Any(u => u.Email == user.Email))
+            {
+                return Conflict(new { message = "A user with this email already exists." });
+            }
+
+            // Set default values for CreatedAt, IsDeleted, and UserType if not provided
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            user.CreatedAt = DateTime.UtcNow;
+            user.IsDeleted = false;
+
+            if (string.IsNullOrWhiteSpace(user.UserType))
+            {
+                user.UserType = "User"; // Default to "User" if not specified
+            }
+
+            // Save user to the database
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
+
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
@@ -103,5 +135,63 @@ namespace SocialCampaign.Server.Controllers
         {
             return _context.Users.Any(e => e.UserId == id);
         }
+
+        // Login logic with JWT token generation
+        [HttpPost("login")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
+        {
+            if (loginRequest == null || string.IsNullOrWhiteSpace(loginRequest.Email) || string.IsNullOrWhiteSpace(loginRequest.Password))
+            {
+                return BadRequest(new { message = "Email and Password are required." });
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == loginRequest.Email);
+
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.PasswordHash))
+            {
+                return Unauthorized(new { message = "Invalid email or password." });
+            }
+
+            if (user.IsDeleted)
+            {
+                return Unauthorized(new { message = "Account is deactivated." });
+            }
+
+            // Generate JWT Token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]); // Access config here
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                    new Claim(ClaimTypes.Name, user.Email),
+                    new Claim(ClaimTypes.Role, user.UserType)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                Issuer = _configuration["JwtSettings:Issuer"], // Access config here
+                Audience = _configuration["JwtSettings:Audience"], // Access config here
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var jwtToken = tokenHandler.WriteToken(token);
+
+            return Ok(new
+            {
+                message = "Login successful.",
+                userId = user.UserId,
+                userType = user.UserType,
+                email = user.Email,
+                token = jwtToken
+            });
+        }
+
+        public class LoginRequest
+        {
+            public string Email { get; set; }
+            public string Password { get; set; }
+        }
     }
+
 }

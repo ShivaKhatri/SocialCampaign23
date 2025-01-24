@@ -1,221 +1,104 @@
-import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import Navbar from '../../components/Navbar/Navbar';
+import Campaign from '../../components/Campaign/Campaign';
+import Advertisements from '../../components/Advertisement/Advertisement';
 import './Home.css';
-import Navbar from '../../Components/Navbar/Navbar';
-import Profile from '../../Components/Profile/Profile';
-import Suggestions from '../../Components/Suggestion/Suggestion';
-import Post from '../../Components/Post/Post';
-import Advertisement from '../../Components/Advertisement/Advertisement';
-import CreatePost from '../../Components/CreatePost/CreatePost';
-import Footer from '../../Components/Footer/Footer';
+
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
+    const [user, setUser] = useState(null); // Mock user data
+    const [campaigns, setCampaigns] = useState([]); // Mock campaigns
 
-  const handleOpenModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
+    useEffect(() => {
+        // Mock user data
+        const userData = {
+            profilePicture: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqf0Wx4wmsKfLYsiLdBx6H4D8bwQBurWhx5g&s',
+            name: 'John Doe',
+            email: 'john@example.com',
+            bio: 'Enthusiast of environmental causes and tech.',
+            location: 'California, USA',
+            website: 'https://johndoe.com',
+        };
 
-  const handlePost = (postData) => {
-    console.log("Post Data:", postData);
-    // Handle post submission logic here
-  };
-  const suggestionData = [
-    {
-      id: 1,
-      firstName: "Mohammed",
-      lastName: "Alomn",
-      mutualConnections: 1,
-      image: "https://placehold.co/45x45/png", // Replace with actual user image
-    },
-    {
-      id: 2,
-      firstName: "John",
-      lastName: "Doe",
-      mutualConnections: 2,
-      image: "https://placehold.co/45x45/png", // Replace with actual user image
-    },
-    {
-      id: 3,
-      firstName: "Jane",
-      lastName: "Smith",
-      mutualConnections: 3,
-      image: "https://placehold.co/45x45/png", // Replace with actual user image
-    },
-  ];
-  const users = [
-    {
-      id: 1,
-      name: "Salahuddin",
-      role: "Admin",
-      image: "https://placehold.co/100x100/png", // Replace with the user's image URL
+        // Mock campaigns data
+        const campaignsData = [
+            {
+                id: 1,
+                title: 'Save the Forest',
+                description: 'Join us to protect the forests!',
+                imageUrl: 'http://parker-design.co.uk/assets/social-awareness-campaign-3.jpg',
+                startDate: '2025-01-01',
+                endDate: '2025-06-01',
+                likes: 120,
+                comments: [
+                    { username: 'Alice', text: 'I love this campaign!', likes: 5 },
+                    { username: 'Bob', text: 'Count me in!', likes: 3 },
+                ],
+            },
+            {
+                id: 2,
+                title: 'Clean the Oceans',
+                description: 'Help us clean the oceans.',
+                imageUrl: 'https://images.squarespace-cdn.com/content/v1/5bf6028b266c07c1f750e3be/1543200972690-UJ768YYCF3U5RFU6QIMG/magazine_mockup_2',
+                startDate: '2025-02-01',
+                endDate: '2025-07-01',
+                likes: 80,
+                comments: [
+                    { username: 'Charlie', text: 'This is so important!', likes: 10 },
+                    { username: 'David', text: 'Great initiative!', likes: 2 },
+                ],
+            },
+        ];
 
-    },]
-  const posts = [
-    {
-      author: "John Doe",
-      date: "January 18, 2025",
-      location: "New York, USA",
-      likes: "5",
-      text: "This post do not contain any media",
-     
-      comments: [
-        {
-          author: "Jane Smith",
-          text: "Great post! Really enjoyed reading this."
-        },
-        {
-          author: "Mike Johnson",
-          text: "Thanks for sharing. Looking forward to more content."
-        },
-        {
-          author: "Emily Davis",
-          text: "Interesting perspective, thanks for the insights!"
-        }
-      ]
-    },
-    {
-      author: "John Doe",
-      date: "January 18, 2025",
-      location: "New York, USA",
-      likes: "5",
-      text: "This is an example post text. It can contain multiple lines and media.",
-      media: {
-        type: "image", // Can be 'image', 'video', or 'audio'
-        src: "https://placehold.co/600x400/png" // URL to the media file
-      },
-      comments: [
-        {
-          author: "Jane Smith",
-          text: "Great post! Really enjoyed reading this."
-        },
-        {
-          author: "Mike Johnson",
-          text: "Thanks for sharing. Looking forward to more content."
-        },
-        {
-          author: "Emily Davis",
-          text: "Interesting perspective, thanks for the insights!"
-        }
-      ]
-    },
-    {
-      author: "John Doe",
-      date: "January 18, 2025",
-      location: "New York, USA",
-      likes: "5",
-      text: "This is an example post text. It can contain multiple lines and media.",
-      media: {
-        type: "audio",
-        src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-      }
-,    
-      comments: [
-        {
-          author: "Jane Smith",
-          text: "Great post! Really enjoyed reading this."
-        },
-        {
-          author: "Mike Johnson",
-          text: "Thanks for sharing. Looking forward to more content."
-        },
-        {
-          author: "Emily Davis",
-          text: "Interesting perspective, thanks for the insights!"
-        }
-      ]
-    },
-    {
-      author: "John Doe",
-      date: "January 18, 2025",
-      location: "New York, USA",
-      likes: "5",
-      text: "This is an example post text. It can contain multiple lines and media.",
-      media: {
-        type: "image", // Can be 'image', 'video', or 'audio'
-        src: "https://placehold.co/600x400/png" // URL to the media file
-      },
-      comments: [
-        {
-          author: "Jane Smith",
-          text: "Great post! Really enjoyed reading this."
-        },
-        {
-          author: "Mike Johnson",
-          text: "Thanks for sharing. Looking forward to more content."
-        },
-        {
-          author: "Emily Davis",
-          text: "Interesting perspective, thanks for the insights!"
-        }
-      ]
-    },
-    {
-      author: "John Doe",
-      date: "January 18, 2025",
-      location: "New York, USA",
-      likes: "5",
-      text: "This is an example post text. It can contain multiple lines and media.",
-      media: {
-        type: "video", // Can be 'image', 'video', or 'audio'
-        src: "https://www.example.com/sample-video.mp4" // URL to the media file
-      },
-    
-      comments: [
-        {
-          author: "Jane Smith",
-          text: "Great post! Really enjoyed reading this."
-        },
-        {
-          author: "Mike Johnson",
-          text: "Thanks for sharing. Looking forward to more content."
-        },
-        {
-          author: "Emily Davis",
-          text: "Interesting perspective, thanks for the insights!"
-        }
-      ]
-    },
+        setUser(userData);
+        setCampaigns(campaignsData);
+    }, []);
 
-  ];
-  return (
-    <div className='home-page'>
-      <Navbar />
-      <div className="container-fluid  mt-4" style={{ minHeight: "100vh" }}>
-      <CreatePost
-        show={showModal}
-        handleClose={handleCloseModal}
-        handlePost={handlePost}
-      />
-        <div className="row">
+    return (
+        <div className="home-container">
+            <Navbar />
+            <div className="container-fluid">
+                <div className="row">
+                    {/* Left side: Fixed Profile */}
+                    <div className="col-md-3 profile-col">
+                        <div className="profile-section">
+                            <div className="profile-header">
+                                <img src={user?.profilePicture} alt="Profile" className="profile-picture" />
+                                <div className="profile-info">
+                                    <h2 className="profile-name">{user?.name}</h2>
+                                    <p className="profile-bio">{user?.bio}</p>
+                                </div>
+                            </div>
+                            <div className="profile-details">
+                                <ul className="profile-list">
+                                    <li><strong>Email:</strong> {user?.email}</li>
+                                    <li><strong>Location:</strong> {user?.location}</li>
+                                    <li><strong>Website:</strong> <a href={user?.website} target="_blank" rel="noopener noreferrer">{user?.website}</a></li>
+                                </ul>
+                                <div className="profile-buttons">
+                                    <button className="btn btn-primary">View Profile</button>
+                                    <button className="btn btn-secondary">View Liked Campaigns</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          {/* Left Sidebar */}
-          <div className="col-md-3">
-            {users.map((user) => (
-              <Profile key={user.id} user={user} />
-            ))}
-            <Suggestions suggestions={suggestionData} />
-          </div>
+                    {/* Middle: Campaigns Section */}
+                    <div className="col-md-6 campaigns-col">
+                        <div className="campaigns-section">
+                            {campaigns.map((campaign) => (
+                                <Campaign key={campaign.id} campaign={campaign} />
+                            ))}
+                        </div>
+                    </div>
 
-          {/* Main Content */}
-          <div className="col-md-6">
-
-            <div className=" post" style={{ maxHeight: "105vh" }}>
-              <button onClick={handleOpenModal} className="btn btn-primary mb-3 my-3 w-100">Create New Post</button>
-              {posts.map((post, index) => (
-                <Post key={index} post={post} />
-              ))}
+                    {/* Right side: Advertisements */}
+                    <div className="col-md-3 ads-col">
+                        <Advertisements />
+                    </div>
+                </div>
             </div>
-          </div>
-
-          {/* Right Sidebar */}
-          <div className="col-md-3">
-            <Advertisement />
-          </div>
         </div>
-      </div>
-      <Footer/>
-    </div>
-  );
-}
+    );
+};
 
 export default Home;

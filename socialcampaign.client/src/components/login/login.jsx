@@ -10,15 +10,12 @@ import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 const Login = () => {
     const navigate = useNavigate();
 
-    const validEmail = "salah@test.com";
-    const validPassword = "password123";
-
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [rememberMe, setRememberMe] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
 
         if (!email || !password) {
@@ -26,13 +23,36 @@ const Login = () => {
             return;
         }
 
-        if (email === validEmail && password === validPassword) {
-            toast.success("Login successful!", { position: "top-center", autoClose: 1500 });
-            setTimeout(() => {
-                navigate("/home");
-            }, 1000);
-        } else {
-            toast.error("Invalid email or password!", { position: "top-center", autoClose: 1500 });
+        try {
+            const response = await fetch("https://localhost:53328/api/Users/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email, password }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+
+                // Store the JWT token and user info in localStorage
+                localStorage.setItem('jwtToken', data.token);
+                localStorage.setItem('userId', data.userId);
+                localStorage.setItem('userType', data.userType);
+                localStorage.setItem('email', data.email);
+
+                toast.success("Login successful!", { position: "top-center", autoClose: 1500 });
+
+                setTimeout(() => {
+                    navigate("/home");  // Redirect to home or dashboard
+                }, 1000);
+            } else {
+                const error = await response.json();
+                toast.error(error.message || "Invalid email or password!", { position: "top-center", autoClose: 1500 });
+            }
+        } catch (error) {
+            console.error(error);
+            toast.error("An error occurred. Please try again later.", { position: "top-center", autoClose: 1500 });
         }
     };
 
@@ -40,39 +60,42 @@ const Login = () => {
         <div className="loginCont">
             <ToastContainer />
             <div className="loginCard">
-                <div className='logoCard'>
-                    <h3 className='text-primary'>Awareness App</h3>
+                <div className='logoCard text-center mb-3'>
+                    <h3 className='text-primary fw-bold'>Awareness App</h3>
                 </div>
-                <h3 className='loginHead'>Login</h3>
-                <form className='loginForm' onSubmit={handleLogin}>
+                <h3 className='loginHead text-center'>Login</h3>
+                <form className='loginForm' onSubmit={handleLogin} noValidate>
                     <div className="loginFormCard">
                         <label htmlFor="email" className='mb-1 fw-bold'>Email</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            className="form-control mb-3" 
-                            name="email" 
-                            autoComplete="on" 
-                            placeholder="enter your email" 
-                            value={email} 
-                            onChange={(e) => setEmail(e.target.value)} 
+                        <input
+                            type="email"
+                            id="email"
+                            className="form-control mb-3"
+                            name="email"
+                            autoComplete="on"
+                            placeholder="Enter your email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
                         <label htmlFor="password" className='mb-1 fw-bold'>Password</label>
                         <div className="passwordFieldWrapper mb-3">
-                            <input 
+                            <input
                                 type={showPassword ? "text" : "password"}
                                 id="password"
                                 className="form-control"
                                 name="password"
                                 autoComplete="on"
-                                placeholder="enter your password"
+                                placeholder="Enter your password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                required
                             />
                             <div className="passwordToggleIcon">
                                 <FontAwesomeIcon
                                     icon={showPassword ? faEyeSlash : faEye}
                                     onClick={() => setShowPassword(!showPassword)}
+                                    className="pointer"
                                 />
                             </div>
                         </div>
@@ -88,11 +111,11 @@ const Login = () => {
                             </div>
                             <Link to="/forgot-password" className="link">Forgot Password?</Link>
                         </div>
-                        <button type="submit" className="btn btn-primary">Login</button>
+                        <button type="submit" className="btn btn-primary w-100">Login</button>
                     </div>
                 </form>
-                <div className="signUpBut">
-                    <span>Don't have an Account?</span>
+                <div className="signUpBut text-center mt-3">
+                    <span>Don't have an Account? </span>
                     <Link to="/signup" className="link">Sign Up</Link>
                 </div>
             </div>
