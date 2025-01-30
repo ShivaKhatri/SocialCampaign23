@@ -1,0 +1,37 @@
+.business-profile {
+    background-color: #e8e8ea;
+    flex-grow: 1; /* Ensure it takes up the remaining space */
+    padding: 20px; /* Add padding to avoid touching the edges */
+}
+
+.show-ads-tab {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.list-element:hover {
+    cursor: pointer;
+}
+
+.business-content-container {
+    height: 100%;
+    padding-bottom: 50px; /* Add padding at the bottom to avoid touching the footer */
+}
+
+/* Ensure the container takes full height and aligns properly */
+.business-profile .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust the row and column layout */
+.business-profile .row {
+    flex-grow: 1;
+    margin: 0; /* Remove default margin to avoid odd gaps */
+}
+
+.business-profile .col-md-3,
+.business-profile .col-md-9 {
+    padding: 0 15px; /* Add padding to columns for better spacing */
+}

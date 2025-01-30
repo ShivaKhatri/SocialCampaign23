@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Campaign from '../../components/Campaign/Campaign';
 import Advertisements from '../../components/Advertisement/Advertisement';
 import './Home.css';
+import HeroSection from '../../components/HeroSection/HeroSection';
 
 const Home = () => {
     const [user, setUser] = useState(null); // Mock user data
@@ -24,8 +25,10 @@ const Home = () => {
             {
                 id: 1,
                 title: 'Save the Forest',
-                description: 'Join us to protect the forests!',
+                description: 'Forests are the lifeline of our planet, acting as the lungs of the Earth by providing us with oxygen, storing carbon, and maintaining the balance of our ecosystem. They are home to countless species of plants and animals, safeguarding biodiversity and sustaining life. Beyond their ecological importance, forests offer us clean water, fertile soil, and natural resources that support livelihoods and economies. However, deforestation and human activities are rapidly depleting this invaluable resource.',
                 imageUrl: 'http://parker-design.co.uk/assets/social-awareness-campaign-3.jpg',
+                owner:'John Doe',
+                ownerImg:'https://placehold.co/40',
                 startDate: '2025-01-01',
                 endDate: '2025-06-01',
                 likes: 120,
@@ -40,6 +43,8 @@ const Home = () => {
                 description: 'Help us clean the oceans.',
                 imageUrl: 'https://images.squarespace-cdn.com/content/v1/5bf6028b266c07c1f750e3be/1543200972690-UJ768YYCF3U5RFU6QIMG/magazine_mockup_2',
                 startDate: '2025-02-01',
+                owner:'John Doe',
+                ownerImg:'https://placehold.co/40',
                 endDate: '2025-07-01',
                 likes: 80,
                 comments: [
@@ -55,35 +60,17 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <Navbar />
+            <HeroSection/>
             <div className="container-fluid">
-                <div className="row">
+                
+                <div className='home-content' >
                     {/* Left side: Fixed Profile */}
-                    <div className="col-md-3 profile-col">
-                        <div className="profile-section">
-                            <div className="profile-header">
-                                <img src={user?.profilePicture} alt="Profile" className="profile-picture" />
-                                <div className="profile-info">
-                                    <h2 className="profile-name">{user?.name}</h2>
-                                    <p className="profile-bio">{user?.bio}</p>
-                                </div>
-                            </div>
-                            <div className="profile-details">
-                                <ul className="profile-list">
-                                    <li><strong>Email:</strong> {user?.email}</li>
-                                    <li><strong>Location:</strong> {user?.location}</li>
-                                    <li><strong>Website:</strong> <a href={user?.website} target="_blank" rel="noopener noreferrer">{user?.website}</a></li>
-                                </ul>
-                                <div className="profile-buttons">
-                                    <button className="btn btn-primary">View Profile</button>
-                                    <button className="btn btn-secondary">View Liked Campaigns</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* <div className="col-md-3 profile-col">
+                       
+                    </div> */}
 
                     {/* Middle: Campaigns Section */}
-                    <div className="col-md-6 campaigns-col">
+                    <div className=" campaigns-col">
                         <div className="campaigns-section">
                             {campaigns.map((campaign) => (
                                 <Campaign key={campaign.id} campaign={campaign} />
@@ -92,7 +79,7 @@ const Home = () => {
                     </div>
 
                     {/* Right side: Advertisements */}
-                    <div className="col-md-3 ads-col">
+                    <div className="ads-container">
                         <Advertisements />
                     </div>
                 </div>

@@ -1,19 +1,30 @@
+// Login.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AuthContext } from "../context/AuthContext"; // Import AuthContext
 import "./login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
 const Login = () => {
     const navigate = useNavigate();
+    const { login } = useContext(AuthContext); // Access login function from context
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [rememberMe, setRememberMe] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
+
+    // Redirect logged-in users to the home page
+    useEffect(() => {
+        const token = localStorage.getItem('jwtToken') || sessionStorage.getItem('jwtToken');
+        if (token) {
+            navigate('/home');  // Redirect to home if logged in
+        }
+    }, [navigate]);
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -35,16 +46,23 @@ const Login = () => {
             if (response.ok) {
                 const data = await response.json();
 
-                // Store the JWT token and user info in localStorage
-                localStorage.setItem('jwtToken', data.token);
+                // Store the JWT token in localStorage or sessionStorage based on rememberMe
+                if (rememberMe) {
+                    localStorage.setItem('jwtToken', data.token); // Longer session (stored in localStorage)
+                } else {
+                    sessionStorage.setItem('jwtToken', data.token); // Temporary session (stored in sessionStorage)
+                }
                 localStorage.setItem('userId', data.userId);
                 localStorage.setItem('userType', data.userType);
                 localStorage.setItem('email', data.email);
-
+                localStorage.setItem('profilePicture', data.profilePicture);
                 toast.success("Login successful!", { position: "top-center", autoClose: 1500 });
 
+                // Update the AuthContext login state
+                login(data.token); // Use login from context
+
                 setTimeout(() => {
-                    navigate("/home");  // Redirect to home or dashboard
+                    navigate("/home");  // Redirect to home after successful login
                 }, 1000);
             } else {
                 const error = await response.json();
@@ -55,6 +73,7 @@ const Login = () => {
             toast.error("An error occurred. Please try again later.", { position: "top-center", autoClose: 1500 });
         }
     };
+
 
     return (
         <div className="loginCont">

@@ -1,0 +1,40 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\867f2468-b4c2-4776-a02c-4f72342bf038.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>profile_pictures/867f2468-b4c2-4776-a02c-4f72342bf038.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m57dhe2i76</Fingerprint>
+      <Integrity>eq7f+g1Cd003g9rpheDXFk7sw0F6/VMJk8nARc7DAZk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\867f2468-b4c2-4776-a02c-4f72342bf038.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\9f98631f-628f-4dd4-b8e5-417fae1cc211.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>profile_pictures/9f98631f-628f-4dd4-b8e5-417fae1cc211.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>89fwewdlpy</Fingerprint>
+      <Integrity>xIyteDFTJqT4emUP2/CRYiv7QXNJe6mCiW46tzcMTcA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\9f98631f-628f-4dd4-b8e5-417fae1cc211.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

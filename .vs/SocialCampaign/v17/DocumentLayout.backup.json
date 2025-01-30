@@ -3,52 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\advertisement\\advertisement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\advertisement\\advertisement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\advertisement\\advertisements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\advertisement\\advertisements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\home\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\home\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\campaign\\campaign.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\campaign\\campaign.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\campaign\\campaign.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\campaign\\campaign.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\navbar\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\navbar\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\navbar\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\navbar\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\createpost\\createpost.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\createpost\\createpost.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\profile\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\profile\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\userlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\userlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\userprofile\\userprofile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -63,44 +23,188 @@
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\services\\userservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\users\\users.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\users\\users.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\services\\campaignservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\services\\campaignservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\suggestion\\suggestion.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\suggestion\\suggestion.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\context\\authcontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\context\\authcontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\suggestion\\suggestion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\suggestion\\suggestion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\changeinfo\\changeinfo.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\changeinfo\\changeinfo.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\context\\usercontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\context\\usercontext.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\profilepicture\\profilepicture.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\profilepicture\\profilepicture.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\login\\login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\navbar\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\navbar\\navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\socialcampaign.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\socialcampaign.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\socialcampaign.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\socialcampaign.client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\protectedroute.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\createpost\\createpost.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\createpost\\createpost.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\post\\post.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\post\\post.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\suggestion\\suggestion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\suggestion\\suggestion.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\signup\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\signup\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\signup\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\signup\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\herosection\\herosection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\herosection\\herosection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\navbar\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\navbar\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\post\\post.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\post\\post.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\users\\users.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\users\\users.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\changelog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\changelog.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\businessprofile\\businessprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\businessprofile\\businessprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\herosection\\herosection.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\herosection\\herosection.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\footer\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\footer\\footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\footer\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\footer\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\suggestion\\suggestion.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\suggestion\\suggestion.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\home\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\home\\home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\businessprofile\\businessprofile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\businessprofile\\businessprofile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\businessstats\\businessstats.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\businessstats\\businessstats.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\advertisement\\advertisement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\advertisement\\advertisement.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\pages\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\pages\\home\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\advertisement\\advertisements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\advertisement\\advertisements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\campaign\\campaign.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\campaign\\campaign.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\campaign\\campaign.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\campaign\\campaign.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\services\\campaignservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\services\\campaignservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\changeinfo\\changeinfo.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\changeinfo\\changeinfo.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,20 +227,8 @@
       "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\models\\business.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\signup\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\signup\\signup.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\login\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\login\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\users\\users.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\users\\users.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\signup\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\signup\\signup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -175,44 +267,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\services\\businessadservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\services\\businessadservice.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\src\\components\\profile\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\src\\components\\profile\\profile.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\node_modules\\react-dom\\cjs\\react-dom.development.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:socialcampaign.client\\node_modules\\react-dom\\cjs\\react-dom.development.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\socialcampaign.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\socialcampaign.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SocialCamp/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -220,10 +280,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|solutionrelative:socialcampaign.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92287016-D2EC-4BD5-AFAF-36DBA97585FE}|socialcampaign.client\\socialcampaign.client.esproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -240,6 +296,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\migrations\\20250124040903_createinitialdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\migrations\\20250124040903_createinitialdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|c:\\users\\shiva\\onedrive\\desktop\\stage 3\\socialcampaign\\socialcampaign\\socialcampaign.server\\migrations\\20250129022655_addprofilepicturetousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEC22C81-6C3C-4C49-8E5D-FFB32521BB6A}|SocialCampaign.Server\\SocialCampaign.Server.csproj|solutionrelative:socialcampaign.server\\migrations\\20250129022655_addprofilepicturetousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -249,7 +309,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -265,319 +325,202 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "advertisements.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T14:23:47.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Navbar.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T14:16:14.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Campaign.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T14:12:23.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Campaign.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T14:08:15.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Comment.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Comment.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T03:29:16.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CampaignLike.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\CampaignLike.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\CampaignLike.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\CampaignLike.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\CampaignLike.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T10:00:04.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Campaign.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Campaign.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Campaign.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Campaign.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\Campaign.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T10:31:20.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-20T11:45:39.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "login.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\login\\login.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\login\\login.jsx",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-21T07:15:22.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "userService.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\userService.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\services\\userService.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\userService.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\services\\userService.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-20T10:38:07.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\UsersController.cs",
               "RelativeToolTip": "SocialCampaign.Server\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAswKUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAwI0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T07:32:03.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Navbar.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T02:48:43.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Advertisement.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABrAAAAAAAAAA==",
+              "Title": "Profile.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-22T02:29:31.598Z",
+              "WhenOpened": "2025-01-22T03:34:22.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\Home\\Home.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\Home\\Home.css",
-              "ViewState": "AgIAAOQAAAAAAAAAAAAcwCABAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-21T07:19:32.611Z",
+              "WhenOpened": "2025-01-24T08:38:30.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserList.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\UserList.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\UserList.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\UserList.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\UserList.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-20T10:30:55.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreatePost.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T08:39:52.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "UserProfile.jsx",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.jsx",
               "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.jsx",
               "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.jsx",
               "RelativeToolTip": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-01-24T08:38:32.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\App.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\App.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-21T07:19:29.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Signup.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\signup\\Signup.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\signup\\Signup.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\signup\\Signup.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\signup\\Signup.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "Navbar.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Navbar\\Navbar.jsx",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T08:09:42.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Post.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Post\\Post.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Post\\Post.jsx",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T09:53:20.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "campaignService.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\campaignService.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\services\\campaignService.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\campaignService.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\services\\campaignService.jsx",
-              "ViewState": "AgIAACAAAAAAAAAAAADwvzgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-22T02:31:24.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "login.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\login\\login.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\login\\login.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-21T07:15:21.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Business.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Business.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Business.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Business.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\Business.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T03:04:53.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BusinessAd.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\BusinessAd.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\BusinessAd.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\BusinessAd.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\BusinessAd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T10:32:18.314Z",
+              "WhenOpened": "2025-01-24T02:48:43.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "AuthContext.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\context\\AuthContext.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\context\\AuthContext.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\context\\AuthContext.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\context\\AuthContext.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-29T00:12:32.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "userContext.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\context\\userContext.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\context\\userContext.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\context\\userContext.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\context\\userContext.jsx",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-29T02:00:50.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\index.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\index.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-15T02:08:54.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-15T02:08:28.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserList.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\UserList.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\UserList.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\UserList.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\UserList.jsx",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-20T10:30:55.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "userService.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\userService.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\services\\userService.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\userService.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\services\\userService.jsx",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwEEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-20T10:38:07.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\User.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T04:36:16.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Program.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Program.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T01:54:35.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T01:57:10.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SocialCampaign.Server.http",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\SocialCampaign.Server.http",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\SocialCampaign.Server.http",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\SocialCampaign.Server.http",
+              "RelativeToolTip": "SocialCampaign.Server\\SocialCampaign.Server.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-15T01:45:03.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\appsettings.json",
               "RelativeDocumentMoniker": "SocialCampaign.Server\\appsettings.json",
@@ -590,159 +533,110 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Post.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Post\\Post.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Post\\Post.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T11:17:17.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Program.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Program.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T01:54:35.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserProfile.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\UserProfile\\UserProfile.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T08:38:30.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ChangeInfo.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T11:17:28.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Suggestion.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T09:37:06.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Suggestion.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-24T11:17:37.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\User.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\User.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T04:36:16.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 7,
               "Title": "Users.jsx",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Users\\Users.jsx",
               "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Users\\Users.jsx",
               "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Users\\Users.jsx",
               "RelativeToolTip": "socialcampaign.client\\src\\components\\Users\\Users.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-01-21T10:04:16.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "20250124035317_CreateInitialDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\WeatherForecast.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T03:53:18.301Z"
+              "WhenOpened": "2025-01-15T01:57:43.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "20250124035702_CreateInitialDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T03:57:02.505Z"
+              "DocumentIndex": 15,
+              "Title": "ProfilePicture.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ProfilePicture\\ProfilePicture.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\ProfilePicture\\ProfilePicture.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ProfilePicture\\ProfilePicture.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\ProfilePicture\\ProfilePicture.jsx",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwB0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-29T21:59:26.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20250124040223_CreateInitialDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
+              "DocumentIndex": 21,
+              "Title": "socialcampaign.client.esproj",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\socialcampaign.client.esproj",
+              "RelativeDocumentMoniker": "socialcampaign.client\\socialcampaign.client.esproj",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\socialcampaign.client.esproj",
+              "RelativeToolTip": "socialcampaign.client\\socialcampaign.client.esproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T04:02:24.04Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-28T22:08:11.875Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "20250124040903_CreateInitialDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
+              "DocumentIndex": 22,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\package.json",
+              "RelativeDocumentMoniker": "socialcampaign.client\\package.json",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\package.json",
+              "RelativeToolTip": "socialcampaign.client\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T04:09:03.675Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T02:08:44.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 16,
+              "Title": "login.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\login\\login.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\login\\login.jsx",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-21T07:15:22.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreatePost.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\CreatePost\\CreatePost.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T08:39:52.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\vite.config.js",
+              "RelativeDocumentMoniker": "socialcampaign.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\vite.config.js",
+              "RelativeToolTip": "socialcampaign.client\\vite.config.js",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAwEwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T02:11:04.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "signup.css",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\signup\\signup.css",
               "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\signup\\signup.css",
@@ -750,84 +644,312 @@
               "RelativeToolTip": "socialcampaign.client\\src\\components\\signup\\signup.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T08:17:14.163Z",
+              "WhenOpened": "2025-01-24T08:17:14.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Signup.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\signup\\Signup.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\signup\\Signup.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\signup\\Signup.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\signup\\Signup.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T08:09:42.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\Home\\Home.jsx",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-20T11:45:39.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProtectedRoute.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ProtectedRoute.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\ProtectedRoute.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ProtectedRoute.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\ProtectedRoute.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-28T23:50:08.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\README.md",
-              "RelativeDocumentMoniker": "socialcampaign.client\\README.md",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\README.md",
-              "RelativeToolTip": "socialcampaign.client\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-01-15T02:09:21.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CampaignsController.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CampaignsController.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\CampaignsController.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CampaignsController.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\CampaignsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T07:30:14.596Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "BusinessesController.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessesController.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\BusinessesController.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessesController.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\BusinessesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T07:29:01.071Z"
+              "Title": "Footer.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Footer\\Footer.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Footer\\Footer.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Footer\\Footer.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Footer\\Footer.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-28T22:25:39.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "BusinessAdsController.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 74,
+              "Title": "20250129022655_AddProfilePictureToUsers.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250129022655_AddProfilePictureToUsers.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250129022655_AddProfilePictureToUsers.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250129022655_AddProfilePictureToUsers.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250129022655_AddProfilePictureToUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T07:29:43.977Z"
+              "WhenOpened": "2025-01-29T02:26:56.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Navbar.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Navbar\\Navbar.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-24T14:16:14.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HeroSection.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\HeroSection\\HeroSection.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\HeroSection\\HeroSection.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\HeroSection\\HeroSection.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\HeroSection\\HeroSection.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-29T01:01:08.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Suggestion.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-24T09:37:06.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Post.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Post\\Post.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Post\\Post.jsx",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T09:53:20.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Post.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Post\\Post.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Post\\Post.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Post\\Post.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-24T11:17:17.255Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\CommentsController.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\CommentsController.cs",
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-21T07:19:29.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Footer.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Footer\\Footer.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Footer\\Footer.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Footer\\Footer.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Footer\\Footer.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-28T22:26:03.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "BusinessProfile.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.jsx",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-28T23:14:57.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CHANGELOG.md",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\CHANGELOG.md",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\CHANGELOG.md",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\CHANGELOG.md",
+              "RelativeToolTip": "SocialCampaign.Server\\CHANGELOG.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T07:30:42.633Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-01-28T23:46:02.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Suggestion.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Suggestion\\Suggestion.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T11:17:37.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Users.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Users\\Users.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Users\\Users.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Users\\Users.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Users\\Users.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-28T23:52:14.239Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 45,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\App.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Title": "Home.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\Home\\Home.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\Home\\Home.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\Home\\Home.css",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-21T07:19:32.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "HeroSection.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\HeroSection\\HeroSection.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\HeroSection\\HeroSection.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\HeroSection\\HeroSection.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\HeroSection\\HeroSection.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-15T02:08:28.656Z"
+              "WhenOpened": "2025-01-28T23:30:57.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BusinessProfile.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\Pages\\BusinessProfile\\BusinessProfile.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-28T23:37:22.522Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 44,
+              "Title": "Advertisement.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Advertisement\\Advertisement.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-22T02:29:31.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Campaign.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Campaign.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Campaign.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Campaign.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\Campaign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:31:20.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CampaignLike.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\CampaignLike.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\CampaignLike.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\CampaignLike.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\CampaignLike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:00:04.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Comment.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:29:16.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BusinessStats.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\BusinessStats\\BusinessStats.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\BusinessStats\\BusinessStats.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\BusinessStats\\BusinessStats.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\BusinessStats\\BusinessStats.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-28T22:17:16.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Campaign.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Campaign\\Campaign.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T14:08:15.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "main.jsx",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\main.jsx",
               "RelativeDocumentMoniker": "socialcampaign.client\\src\\main.jsx",
@@ -839,19 +961,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\index.css",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\index.css",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\index.css",
-              "RelativeToolTip": "socialcampaign.client\\src\\index.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 48,
+              "Title": "Campaign.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Campaign\\Campaign.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-15T02:08:54.608Z"
+              "WhenOpened": "2025-01-24T14:12:23.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
+              "Title": "advertisements.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\Advertisement\\advertisements.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-24T14:23:47.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "campaignService.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\campaignService.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\services\\campaignService.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\campaignService.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\services\\campaignService.jsx",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-22T02:31:24.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.css",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\login\\login.css",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\login\\login.css",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\login\\login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-21T07:15:21.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Business.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Business.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\Business.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\Business.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\Business.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T03:04:53.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "BusinessAd.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\BusinessAd.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\BusinessAd.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\BusinessAd.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Models\\BusinessAd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T10:32:18.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ChangeInfo.jsx",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
+              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
+              "RelativeToolTip": "socialcampaign.client\\src\\components\\ChangeInfo\\ChangeInfo.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-24T11:17:28.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250124035317_CreateInitialDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124035317_CreateInitialDatabase.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:53:18.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20250124035702_CreateInitialDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124035702_CreateInitialDatabase.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:57:02.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20250124040223_CreateInitialDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124040223_CreateInitialDatabase.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T04:02:24.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250124040903_CreateInitialDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Migrations\\20250124040903_CreateInitialDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T04:09:03.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\README.md",
+              "RelativeDocumentMoniker": "socialcampaign.client\\README.md",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\README.md",
+              "RelativeToolTip": "socialcampaign.client\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-01-15T02:09:21.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CampaignsController.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CampaignsController.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\CampaignsController.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CampaignsController.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\CampaignsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T07:30:14.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "BusinessesController.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessesController.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\BusinessesController.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessesController.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\BusinessesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T07:29:01.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BusinessAdsController.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\BusinessAdsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T07:29:43.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T07:30:42.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Models\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "SocialCampaign.Server\\Models\\DatabaseConnection.cs",
@@ -863,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 67,
               "Title": "react-dom.development.js",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
               "RelativeDocumentMoniker": "socialcampaign.client\\node_modules\\react-dom\\cjs\\react-dom.development.js",
@@ -875,79 +1174,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Profile.jsx",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
-              "RelativeDocumentMoniker": "socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
-              "RelativeToolTip": "socialcampaign.client\\src\\components\\Profile\\Profile.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-22T03:34:22.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 66,
               "Title": "businessAdService.jsx",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\businessAdService.jsx",
               "RelativeDocumentMoniker": "socialcampaign.client\\src\\services\\businessAdService.jsx",
               "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\src\\services\\businessAdService.jsx",
               "RelativeToolTip": "socialcampaign.client\\src\\services\\businessAdService.jsx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-01-22T02:31:42.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\vite.config.js",
-              "RelativeDocumentMoniker": "socialcampaign.client\\vite.config.js",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\vite.config.js",
-              "RelativeToolTip": "socialcampaign.client\\vite.config.js",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-15T02:11:04.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "SocialCampaign.Server.http",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\SocialCampaign.Server.http",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\SocialCampaign.Server.http",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\SocialCampaign.Server.http",
-              "RelativeToolTip": "SocialCampaign.Server\\SocialCampaign.Server.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-01-15T01:45:03.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\WeatherForecast.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T01:57:43.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\package.json",
-              "RelativeDocumentMoniker": "socialcampaign.client\\package.json",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\package.json",
-              "RelativeToolTip": "socialcampaign.client\\package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-15T02:08:44.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 68,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SocialCamp/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SocialCamp/True/SqlTable/dbo.Users.sql",
@@ -956,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 71,
               "Title": "CHANGELOG.md",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\CHANGELOG.md",
               "RelativeDocumentMoniker": "socialcampaign.client\\CHANGELOG.md",
@@ -968,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 72,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\package-lock.json",
               "RelativeDocumentMoniker": "socialcampaign.client\\package-lock.json",
@@ -980,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 69,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\index.html",
               "RelativeDocumentMoniker": "socialcampaign.client\\index.html",
@@ -992,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 70,
               "Title": "eslint.config.js",
               "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\socialcampaign.client\\eslint.config.js",
               "RelativeDocumentMoniker": "socialcampaign.client\\eslint.config.js",
@@ -1001,18 +1240,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-15T02:09:10.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "SocialCampaign.Server\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T01:57:10.772Z"
             }
           ]
         }

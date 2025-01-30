@@ -1,0 +1,8 @@
+.business-stats-container{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+.b-stats-heading{
+    border-bottom: 1px solid gray;
+}

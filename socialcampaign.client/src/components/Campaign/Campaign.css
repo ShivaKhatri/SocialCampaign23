@@ -7,8 +7,15 @@
 }
 
 .campaign-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+.owner-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
 }
 
 .campaign-dates {
@@ -23,8 +30,9 @@
 }
 
 .campaign-image {
-    width: 100%;
-    height: auto;
+    width: 200px !important;
+    height: auto !important;
+    object-fit: fill;
     margin-bottom: 10px;
     border-radius: 4px;
 }

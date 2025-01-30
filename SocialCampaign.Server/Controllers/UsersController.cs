@@ -8,20 +8,16 @@ using Microsoft.EntityFrameworkCore;
 using SocialCampaign.Server.Models;
 using BCrypt.Net;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
 using Microsoft.Extensions.Configuration; // Add this
-
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace SocialCampaign.Server.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
-
     public class UsersController : ControllerBase
     {
         private readonly DatabaseConnection _context;
@@ -36,6 +32,7 @@ namespace SocialCampaign.Server.Controllers
 
         // GET: api/Users
         [HttpGet]
+        [Authorize]  // Restrict access to authenticated users
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
@@ -43,6 +40,7 @@ namespace SocialCampaign.Server.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
+        [Authorize]  // Restrict access to authenticated users
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -56,8 +54,8 @@ namespace SocialCampaign.Server.Controllers
         }
 
         // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize]  // Restrict access to authenticated users
         public async Task<IActionResult> PutUser(int id, User user)
         {
             if (id != user.UserId)
@@ -87,8 +85,8 @@ namespace SocialCampaign.Server.Controllers
         }
 
         // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [AllowAnonymous]  // Allow access to unauthenticated users (for user registration)
         public async Task<ActionResult<User>> PostUser(User user)
         {
             // Check if email already exists
@@ -114,9 +112,51 @@ namespace SocialCampaign.Server.Controllers
             return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
+        // Put: api/Users/id/upload-profile-picture
+        // PUT: api/Users/{id}/upload-profile-picture
+        [HttpPut("{id}/upload-profile-picture")]
+        [Authorize]  // Restrict access to authenticated users
+        public async Task<IActionResult> UploadProfilePicture(int id, IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("No file uploaded.");
+            }
+
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            var uniqueFileName = $"{Guid.NewGuid()}_{file.FileName}";
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            // Find the user by ID
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            // Store the relative file path in the database
+            user.ProfilePicture = $"/profile_pictures/{uniqueFileName}";
+            await _context.SaveChangesAsync();
+
+            // Return the URL of the uploaded image
+            var fileUrl = $"{Request.Scheme}://{Request.Host}/profile_pictures/{uniqueFileName}";
+            return Ok(new { imageUrl = fileUrl });
+        }
+
 
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
+        [Authorize]  // Restrict access to authenticated users
         public async Task<IActionResult> DeleteUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -138,7 +178,7 @@ namespace SocialCampaign.Server.Controllers
 
         // Login logic with JWT token generation
         [HttpPost("login")]
-        [AllowAnonymous]
+        [AllowAnonymous]  // Allow access to unauthenticated users (for login)
         public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             if (loginRequest == null || string.IsNullOrWhiteSpace(loginRequest.Email) || string.IsNullOrWhiteSpace(loginRequest.Password))
@@ -193,5 +233,4 @@ namespace SocialCampaign.Server.Controllers
             public string Password { get; set; }
         }
     }
-
 }

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\867f2468-b4c2-4776-a02c-4f72342bf038.png",
+      "PackagePath": "staticwebassets\\profile_pictures\\867f2468-b4c2-4776-a02c-4f72342bf038.png"
+    },
+    {
+      "Id": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\9f98631f-628f-4dd4-b8e5-417fae1cc211.png",
+      "PackagePath": "staticwebassets\\profile_pictures\\9f98631f-628f-4dd4-b8e5-417fae1cc211.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SocialCampaign.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SocialCampaign.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SocialCampaign.Server.props",
+      "PackagePath": "build\\SocialCampaign.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SocialCampaign.Server.props",
+      "PackagePath": "buildMultiTargeting\\SocialCampaign.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SocialCampaign.Server.props",
+      "PackagePath": "buildTransitive\\SocialCampaign.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

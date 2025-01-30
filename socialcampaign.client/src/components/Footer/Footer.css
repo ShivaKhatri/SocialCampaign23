@@ -1,5 +1,7 @@
-.footer{
+.footer {
     background-color: #72a3ed;
-
     color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
 }

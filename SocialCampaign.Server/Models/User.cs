@@ -34,6 +34,7 @@ namespace SocialCampaign.Server.Models
 
         [Required]
         public bool IsDeleted { get; set; }
+        public string ProfilePicture { get; set; }
 
         // Navigation properties
 

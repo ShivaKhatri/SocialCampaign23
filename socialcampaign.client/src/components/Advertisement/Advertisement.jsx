@@ -1,37 +1,132 @@
-import React from 'react';
-import './Advertisements.css';
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./advertisements.css";
 
-const Advertisements = () => {
-    const ads = [
-        {
-            id: 1,
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1661425715124-310ec1b49b8a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwYWR2ZXJ0aXNpbmd8ZW58MHx8MHx8fDA%3D',
-            companyName: 'Eco Ventures',
-            website: 'https://plus.unsplash.com/',
-        },
-        {
-            id: 2,
-            imageUrl: 'https://pleated-jeans.com/wp-content/uploads/2021/04/group-project-meme-40.jpg',
-            companyName: 'Ocean Blue',
-            website: 'https://oceanblue.org',
-        },
-    ];
+const adsData = [
+    {
+      id: 1,
+      image: "https://placehold.co/500",
+      title: "Customs Clearance",
+      description:
+        "Experience seamless shipping with our expert customs team. No hidden fees, no delays—just hassle-free deliveries every time.",
+      businessName: "Swift Logistics Co., Manila",
+      supporters: 54231,
+    },
+    {
+      id: 2,
+      image: "https://placehold.co/500",
+      title: "Affordable Office Rentals",
+      description:
+        "Discover modern office spaces tailored to startups and growing businesses with flexible leasing options and great locations.",
+      businessName: "SmartWork Hubs, Singapore",
+      supporters: 38765,
+    },
+    {
+      id: 9,
+      image: "https://placehold.co/500",
+      title: "Legal Help",
+      description:
+        "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
+      businessName: "BizLegal Solutions, Berlin",
+      supporters: 45820,
+    },
+    {
+        id: 3,
+        image: "https://placehold.co/500",
+        title: "Legal Help",
+        description:
+          "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
+        businessName: "BizLegal Solutions, Berlin",
+        supporters: 45820,
+      },
+      {
+        id: 4,
+        image: "https://placehold.co/500",
+        title: "Legal Help",
+        description:
+          "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
+        businessName: "BizLegal Solutions, Berlin",
+        supporters: 45820,
+      },
+      {
+        id: 5,
+        image: "https://placehold.co/500",
+        title: "Legal Help",
+        description:
+          "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
+        businessName: "BizLegal Solutions, Berlin",
+        supporters: 45820,
+      },
+      
+  // Add more dummy items as needed
+  ];
 
-    return (
-        <div className="advertisements-section">
-            <h3 className="ads-heading">Business Ads</h3>
-            <div className="ads-container">
-                {ads.map((ad) => (
-                    <div key={ad.id} className="ad-card">
-                        <a href={ad.website} target="_blank" rel="noopener noreferrer" className="ad-link">
-                            <img src={ad.imageUrl} alt={ad.companyName} className="ad-image" />
-                            <h4 className="ad-company">{ad.companyName}</h4>
-                        </a>
-                    </div>
-                ))}
+
+
+const Advertisement = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  return (
+    <div className="container mt-4">
+      <div className="row">
+        {/* Active Section */}
+        <div className="col-md-12 mb-4">
+          <div className="card">
+            <div className=" g-0">
+              <div className="">
+                <img
+                  src={adsData[activeIndex].image}
+                  className=" active-image"
+                  alt="Active"
+                />
+              </div>
+              <div className="">
+                <div className="card-body">
+                  <h5 className="card-title text-primary">
+                    {adsData[activeIndex].title}
+                  </h5>
+                  <p className="card-text">
+                    {adsData[activeIndex].description}
+                  </p>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      {adsData[activeIndex].businessName}
+                    </small>
+                  </p>
+                  
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    );
+
+        {/* Thumbnail Section */}
+        <div className="col-md-12">
+          <div className="d-flex ad-elements  overflow-auto">
+            {adsData.map((item, index) => (
+              <div
+                key={item.id}
+                className={`card me-2 ${
+                  activeIndex === index ? "border-primary" : ""
+                }`}
+                style={{ minWidth: "150px", cursor: "pointer" }}
+                onClick={() => setActiveIndex(index)}
+              >
+                <img
+                  src={item.image}
+                  className="card-img-top"
+                  alt={item.title}
+                />
+                <div className="card-body p-2">
+                  <p className="card-text  small" style={{fontWeight:"bold"}}>{item.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Advertisements;
+export default Advertisement;

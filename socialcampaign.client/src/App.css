@@ -1,21 +1,48 @@
 ﻿/* Ensure the body and app div take full height */
 html, body {
     height: 100%;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
+/* Main app container */
 .app {
-    height: 100%; /* Set app container to take full height */
-    display: flex; /* Use flexbox to allow children to grow */
-    flex-direction: column; /* Ensure elements stack vertically */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the app takes full viewport height */
+}
+
+/* Main content area */
+.content {
+    flex: 1; /* Pushes footer down when content is small */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Add some padding at the top to avoid touching the navbar */
+    padding-bottom: 20px; /* Add some padding at the bottom to avoid touching the footer */
 }
 
 /* Ensuring home-container fills the remaining space */
 .home-container {
     display: flex;
     flex-direction: row;
-    flex-grow: 1; /* Make sure this takes up all available space */
-    min-height: 100vh; /* Ensure full height of the viewport */
+    flex-grow: 1;
     padding: 0 15px;
-    margin-top: 70px; /* Adjust for the navbar */
+}
+
+/* Footer styles */
+.footer-container {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+}
+
+/* Fixes footer at the bottom when content is small */
+.footer {
+    background-color: #72a3ed;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
 }

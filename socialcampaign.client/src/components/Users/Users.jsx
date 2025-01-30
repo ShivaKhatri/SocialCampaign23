@@ -24,8 +24,8 @@ const contents = users.length === 0
         </thead>
         <tbody>
             {users.map(user =>
-                <tr key={user.userID}>
-                    <td>{user.userID}</td>
+                <tr key={user.userId}>
+                    <td>{user.userId}</td>
                     <td>{user.firstName}</td>
                     <td>{user.lastName}</td>
                     <td>{user.email}</td>
@@ -37,7 +37,6 @@ const contents = users.length === 0
 return (
     <div>
  
- <Navbar/>
     <div className="d-flex users  flex-column items-center justify-center">
         <h1 id="tableLabel">User List</h1>
         <p>This component demonstrates fetching data from the server.</p>
@@ -46,12 +45,18 @@ return (
     </div>
 );
 
-async function populateUserData() {
-    const response = await fetch('https://localhost:53328/api/Users'); // Adjust the URL if necessary
-    if (response.ok) {
-        const data = await response.json();
-        setUsers(data); // Assuming the API returns an array of user objects
+    async function populateUserData() {
+        const token = localStorage.getItem('jwtToken');  // Ensure you have the token saved
+        const response = await fetch("https://localhost:53328/api/Users", {
+            method: "GET",
+            headers: {
+                Authorization: `Bearer ${token}`,
+            },
+        });
+        if (response.ok) {
+            const data = await response.json();
+            setUsers(data); // Assuming the API returns an array of user objects
+        }
     }
-}
 }
 export default Users

@@ -1,4 +1,83 @@
+.profile-section {
+    text-align: left;
+}
 
-.card-text{
-    color: gray;
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.profile-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+.profile-bio {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-list {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+}
+
+    .profile-list li {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+.profile-buttons {
+    margin-top: 20px;
+}
+
+    .profile-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .profile-buttons .btn-primary {
+        background-color: #2575fc;
+        border: none;
+    }
+
+    .profile-buttons .btn-secondary {
+        background-color: #f1f1f1;
+        border: none;
+    }
+
+    .profile-buttons .btn:hover {
+        background-color: #6a11cb;
+        color: white;
+    }
+.campaigns-tab,.followed-causes,.notifications{
+    overflow-y: auto;
+    height: 500px;
+}
+.myCampaign-image{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+   
 }
