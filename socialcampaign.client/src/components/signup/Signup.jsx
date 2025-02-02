@@ -1,3 +1,5 @@
+// src/components/signup/Signup.jsx
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,20 +8,26 @@ import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./signup.css";
-import { createUser } from "../../services/userService";
+import { createUser } from "../../services/userService"; // Existing userService
+import { createBusiness } from "../../services/businessService"; // New businessService
 
 const Signup = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        password: "",
-        userType: "User", // Default to "User"
-        businessName: "",
-        phone: "",
-        address: "",
-        description: "",
+        UserType: "User", // Default registration type
+        // User fields
+        FirstName: "",
+        LastName: "",
+        Email: "",
+        PasswordHash: "",
+        // ProfilePicture: null, // For User (handled separately if needed)
+
+        // Business fields
+        BusinessName: "",
+        Phone: "",
+        Address: "",
+        Description: "",
+        // Password is already included as 'Password'
     });
     const [showPassword, setShowPassword] = useState(false);
 
@@ -31,32 +39,78 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validation for empty fields
-        if (formData.userType === "User") {
-            const { firstName, lastName, email, password } = formData;
-            if (!firstName || !lastName || !email || !password) {
-                toast.warn("All fields are required!", {
+        if (formData.UserType === "User") {
+            // Basic validations
+            const { FirstName, LastName, Email, PasswordHash, ProfilePicture } = formData;
+            if (!FirstName || !LastName || !Email || !PasswordHash) {
+                toast.warn("All user fields are required!", {
                     position: "top-center",
                     autoClose: 1500,
                 });
                 return;
             }
-        } else {
-            const { businessName, email, phone, address, description } = formData;
-            if (!businessName || !email || !phone || !address || !description) {
-                toast.warn("All fields are required!", {
-                    position: "top-center",
-                    autoClose: 1500,
-                });
-                return;
-            }
-        }
+            // Additional validations if needed (email format, password, etc.)
 
-        // Password validation
-        if (formData.userType === "User") {
-            const passwordRegex =
-                /^(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
-            if (!passwordRegex.test(formData.password)) {
+            // Prepare FormData for multipart/form-data
+            const formDataToSend = new FormData();
+            formDataToSend.append("FirstName", FirstName);
+            formDataToSend.append("LastName", LastName);
+            formDataToSend.append("Email", Email);
+            formDataToSend.append("PasswordHash", PasswordHash);
+
+            // Only append if a file was chosen
+            if (ProfilePicture) {
+                formDataToSend.append("ProfilePicture", ProfilePicture);
+            }
+
+            try {
+                // Use your createUser() from userService
+                await createUser(formDataToSend);
+                toast.success("User registration successful!", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+                setTimeout(() => {
+                    navigate("/");
+                }, 1000);
+            } catch (err) {
+                toast.error(err.message || "Failed to register user.", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+            }
+        }else if (formData.UserType === "Business") {
+            // Business Registration Validation
+            const { BusinessName, Email, Phone, Address, Description, PasswordHash } = formData;
+            if (!BusinessName || !Email || !Phone || !Address || !Description || !PasswordHash) {
+                toast.warn("All business fields are required!", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+                return;
+            }
+            const phoneRegex = /^[0-9 ()+\-]{7,}$/;
+
+            // Basic check that phone meets minimal length or format requirements
+            if (!phoneRegex.test(formData.Phone)) {
+                toast.error("Please enter a valid phone number format.", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+                return;
+            }
+            // Optional: Add more validations (e.g., email format, password strength)
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(Email)) {
+                toast.error("Please enter a valid email address.", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+                return;
+            }
+
+            const passwordRegex = /^(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
+            if (!passwordRegex.test(PasswordHash)) {
                 toast.error(
                     "Password must be at least 8 characters long and include a special character.",
                     {
@@ -66,28 +120,36 @@ const Signup = () => {
                 );
                 return;
             }
-        }
 
-        // Attempt to create user
-        try {
-            const user = {
-                ...formData,
-                passwordHash: formData.password, // Backend expects "PasswordHash"
+            // Prepare business data
+            const businessPayload = {
+                businessName: formData.BusinessName,
+                email: formData.Email,
+                phone: formData.Phone,
+                address: formData.Address,
+                description: formData.Description,
+                passwordHash: formData.PasswordHash, // Send plain-text Password for backend hashing
+                // ProfilePicture: formData.ProfilePicture, // Uncomment if handling file uploads
             };
 
-            await createUser(user);
-            toast.success("Sign-up successful!", {
-                position: "top-center",
-                autoClose: 1500,
-            });
-            setTimeout(() => {
-                navigate("/");
-            }, 1000);
-        } catch (err) {
-            toast.error("Failed to register user.", {
-                position: "top-center",
-                autoClose: 1500,
-            });
+            // Submit Business data to backend using businessService
+            try {
+                const response = await createBusiness(businessPayload);
+                toast.success("Business registration successful!", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+
+                setTimeout(() => {
+                    navigate("/");
+                }, 1000);
+            } catch (err) {
+                // Handle specific error messages returned from the backend
+                toast.error(err.message || "Failed to register business.", {
+                    position: "top-center",
+                    autoClose: 1500,
+                });
+            }
         }
     };
 
@@ -107,10 +169,10 @@ const Signup = () => {
                                 <input
                                     type="radio"
                                     id="registerUser"
-                                    name="userType"
+                                    name="UserType"
                                     className="form-check-input"
                                     value="User"
-                                    checked={formData.userType === "User"}
+                                    checked={formData.UserType === "User"}
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="registerUser" className="form-check-label">
@@ -121,10 +183,10 @@ const Signup = () => {
                                 <input
                                     type="radio"
                                     id="registerBusiness"
-                                    name="userType"
+                                    name="UserType"
                                     className="form-check-input"
                                     value="Business"
-                                    checked={formData.userType === "Business"}
+                                    checked={formData.UserType === "Business"}
                                     onChange={handleChange}
                                 />
                                 <label htmlFor="registerBusiness" className="form-check-label">
@@ -133,174 +195,186 @@ const Signup = () => {
                             </div>
                         </div>
 
-                        {formData.userType === "User" ? (
+                        {formData.UserType === "User" && (
                             <>
-                                <label htmlFor="firstName" className="fw-bold mb-1">
+                                <label htmlFor="FirstName" className="fw-bold mb-1">
                                     First Name
                                 </label>
                                 <input
                                     type="text"
-                                    id="firstName"
+                                    id="FirstName"
                                     className="form-control mb-3"
-                                    name="firstName"
+                                    name="FirstName"
                                     autoComplete="on"
                                     placeholder="Enter your first name"
-                                    value={formData.firstName}
+                                    value={formData.FirstName}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="lastName" className="fw-bold mb-1">
+                                <label htmlFor="LastName" className="fw-bold mb-1">
                                     Last Name
                                 </label>
                                 <input
                                     type="text"
-                                    id="lastName"
+                                    id="LastName"
                                     className="form-control mb-3"
-                                    name="lastName"
+                                    name="LastName"
                                     autoComplete="on"
                                     placeholder="Enter your last name"
-                                    value={formData.lastName}
+                                    value={formData.LastName}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="email" className="fw-bold mb-1">
+                                <label htmlFor="Email" className="fw-bold mb-1">
                                     Email
                                 </label>
                                 <input
                                     type="email"
-                                    id="email"
+                                    id="Email"
                                     className="form-control mb-3"
-                                    name="email"
+                                    name="Email"
                                     autoComplete="on"
                                     placeholder="Enter your email"
-                                    value={formData.email}
+                                    value={formData.Email}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="password" className="fw-bold mb-1">
+                                <label htmlFor="Password" className="fw-bold mb-1">
                                     Password
                                 </label>
                                 <div className="passwordFieldWrapper">
                                     <input
                                         type={showPassword ? "text" : "password"}
-                                        id="password"
+                                        id="PasswordHash"
                                         className="form-control mb-3"
-                                        name="password"
+                                        name="PasswordHash"
                                         autoComplete="on"
                                         placeholder="Enter password"
-                                        value={formData.password}
+                                        value={formData.PasswordHash}
                                         onChange={handleChange}
                                     />
                                     <div className="passwordToggleIcon mb-3">
                                         <FontAwesomeIcon
                                             icon={showPassword ? faEyeSlash : faEye}
                                             onClick={() => setShowPassword(!showPassword)}
+                                            style={{ cursor: "pointer" }}
                                         />
                                     </div>
                                 </div>
+
+                                <label htmlFor="ProfilePicture" className="fw-bold mb-1">
+                                    Profile Picture
+                                </label>
+                                <input
+                                    type="file"
+                                    id="ProfilePicture"
+                                    name="ProfilePicture"
+                                    accept="image/*"
+                                    className="form-control mb-3"
+                                    onChange={(e) => {
+                                        // "e.target.files[0]" is the selected File object
+                                        setFormData({ ...formData, ProfilePicture: e.target.files[0] });
+                                    }}
+                                />
                             </>
-                        ) : (
+                        )}
+
+                        {formData.UserType === "Business" && (
                             <>
-                                <label htmlFor="businessName" className="fw-bold mb-1">
+                                <label htmlFor="BusinessName" className="fw-bold mb-1">
                                     Business Name
                                 </label>
                                 <input
                                     type="text"
-                                    id="businessName"
+                                    id="BusinessName"
                                     className="form-control mb-3"
-                                    name="businessName"
+                                    name="BusinessName"
+                                    autoComplete="on"
                                     placeholder="Enter your business name"
-                                    value={formData.businessName}
+                                    value={formData.BusinessName}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="email" className="fw-bold mb-1">
+                                <label htmlFor="Email" className="fw-bold mb-1">
                                     Email
                                 </label>
                                 <input
                                     type="email"
-                                    id="email"
+                                    id="Email"
                                     className="form-control mb-3"
-                                    name="email"
+                                    name="Email"
+                                    autoComplete="on"
                                     placeholder="Enter your business email"
-                                    value={formData.email}
+                                    value={formData.Email}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="phone" className="fw-bold mb-1">
+                                <label htmlFor="Phone" className="fw-bold mb-1">
                                     Phone
                                 </label>
                                 <input
                                     type="tel"
-                                    id="phone"
-                                    className="form-control "
-                                    name="phone"
-                                    placeholder="Enter your contact"
-                                    value={formData.phone}
-                                    onChange={(e) => {
-                                        const value = e.target.value;
-                                        // Allow only numbers and ensure length is 10 or less
-                                        if (/^\d{0,10}$/.test(value)) {
-                                            setFormData({ ...formData, phone: value });
-                                        }
-                                    }}
+                                    id="Phone"
+                                    className="form-control mb-3"
+                                    name="Phone"
+                                    autoComplete="on"
+                                    placeholder="Enter your business phone number"
+                                    value={formData.Phone}
+                                    onChange={handleChange}
                                 />
-                                <small className="text-muted mb-3">
-                                    Enter a valid 10-digit phone number.
-                                </small>
 
-
-                                <label htmlFor="address" className="fw-bold mb-1">
+                                <label htmlFor="Address" className="fw-bold mb-1">
                                     Address
                                 </label>
                                 <input
                                     type="text"
-                                    id="address"
+                                    id="Address"
                                     className="form-control mb-3"
-                                    name="address"
-                                    placeholder="Enter your address"
-                                    value={formData.address}
+                                    name="Address"
+                                    autoComplete="on"
+                                    placeholder="Enter your business address"
+                                    value={formData.Address}
                                     onChange={handleChange}
                                 />
 
-                                <label htmlFor="description" className="fw-bold mb-1">
+                                <label htmlFor="Description" className="fw-bold mb-1">
                                     Description
                                 </label>
                                 <textarea
-                                    id="description"
-                                    className="form-control "
-                                    name="description"
-                                    placeholder="Enter a brief description of your business"
-                                    rows="3"
-                                    maxLength="500" // Limits input to 500 characters
-                                    value={formData.description}
+                                    id="Description"
+                                    className="form-control mb-3"
+                                    name="Description"
+                                    autoComplete="on"
+                                    placeholder="Enter a description for your business"
+                                    value={formData.Description}
                                     onChange={handleChange}
+                                    rows="4"
                                 />
-                                <small className="text-muted mb-3">
-                                    {formData.description.length}/500 characters
-                                </small>
 
-                                <label htmlFor="password" className="fw-bold mb-1">
+                                <label htmlFor="Password" className="fw-bold mb-1">
                                     Password
                                 </label>
                                 <div className="passwordFieldWrapper">
                                     <input
                                         type={showPassword ? "text" : "password"}
-                                        id="password"
+                                        id="PasswordHash"
                                         className="form-control mb-3"
-                                        name="password"
+                                        name="PasswordHash"
                                         autoComplete="on"
                                         placeholder="Enter password"
-                                        value={formData.password}
+                                        value={formData.PasswordHash}
                                         onChange={handleChange}
                                     />
                                     <div className="passwordToggleIcon mb-3">
                                         <FontAwesomeIcon
                                             icon={showPassword ? faEyeSlash : faEye}
                                             onClick={() => setShowPassword(!showPassword)}
+                                            style={{ cursor: "pointer" }}
                                         />
                                     </div>
                                 </div>
+
+                                {/* ProfilePicture is not handled here since the backend expects JSON */}
                             </>
                         )}
 
@@ -314,7 +388,7 @@ const Signup = () => {
                 </form>
                 <div className="loginButCard">
                     <span>Already have an Account? </span>
-                    <Link to="/" className="link">
+                    <Link to="/login" className="link">
                         Login
                     </Link>
                 </div>

@@ -1,4 +1,3 @@
-// Login.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,6 +7,7 @@ import { AuthContext } from "../context/AuthContext"; // Import AuthContext
 import "./login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { loginUser } from "../../services/userService"; // Import login function
 
 const Login = () => {
     const navigate = useNavigate();
@@ -21,8 +21,28 @@ const Login = () => {
     // Redirect logged-in users to the home page
     useEffect(() => {
         const token = localStorage.getItem('jwtToken') || sessionStorage.getItem('jwtToken');
+
         if (token) {
-            navigate('/home');  // Redirect to home if logged in
+            const tokenParts = token.split('.'); // Split JWT token into header, payload, signature
+            if (tokenParts.length !== 3) {
+                // Invalid token format, clear storage and redirect to login
+                localStorage.removeItem('jwtToken');
+                sessionStorage.removeItem('jwtToken');
+                navigate('/login');
+                return;
+            }
+
+            const payload = JSON.parse(atob(tokenParts[1])); // Decode the payload
+            const expiry = payload.exp * 1000; // Convert expiry to milliseconds
+
+            if (Date.now() >= expiry) {
+                console.log("Token has expired, logging out.");
+                localStorage.removeItem('jwtToken');
+                sessionStorage.removeItem('jwtToken');
+                navigate('/login');
+            } else {
+                navigate('/home');  // Redirect if valid
+            }
         }
     }, [navigate]);
 
@@ -35,45 +55,34 @@ const Login = () => {
         }
 
         try {
-            const response = await fetch("https://localhost:53328/api/Users/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email, password }),
-            });
+            const data = await loginUser(email, password); // Call the function
 
-            if (response.ok) {
-                const data = await response.json();
-
-                // Store the JWT token in localStorage or sessionStorage based on rememberMe
-                if (rememberMe) {
-                    localStorage.setItem('jwtToken', data.token); // Longer session (stored in localStorage)
-                } else {
-                    sessionStorage.setItem('jwtToken', data.token); // Temporary session (stored in sessionStorage)
-                }
-                localStorage.setItem('userId', data.userId);
-                localStorage.setItem('userType', data.userType);
-                localStorage.setItem('email', data.email);
-                localStorage.setItem('profilePicture', data.profilePicture);
-                toast.success("Login successful!", { position: "top-center", autoClose: 1500 });
-
-                // Update the AuthContext login state
-                login(data.token); // Use login from context
-
-                setTimeout(() => {
-                    navigate("/home");  // Redirect to home after successful login
-                }, 1000);
+            // Store the JWT token in localStorage or sessionStorage based on rememberMe
+            if (rememberMe) {
+                localStorage.setItem('jwtToken', data.token); // Longer session (stored in localStorage)
             } else {
-                const error = await response.json();
-                toast.error(error.message || "Invalid email or password!", { position: "top-center", autoClose: 1500 });
+                sessionStorage.setItem('jwtToken', data.token); // Temporary session (stored in sessionStorage)
             }
+
+            // Store user details
+            localStorage.setItem('userId', data.userId);
+            localStorage.setItem('userType', data.userType);
+            localStorage.setItem('email', data.email);
+            localStorage.setItem('profilePicture', data.profilePicture);
+
+            toast.success("Login successful!", { position: "top-center", autoClose: 1500 });
+
+            // Update the AuthContext login state
+            login(data.token); // Use login from context
+
+            setTimeout(() => {
+                navigate("/home");  // Redirect to home after successful login
+            }, 1000);
         } catch (error) {
             console.error(error);
-            toast.error("An error occurred. Please try again later.", { position: "top-center", autoClose: 1500 });
+            toast.error(error.message || "Invalid email or password!", { position: "top-center", autoClose: 1500 });
         }
     };
-
 
     return (
         <div className="loginCont">

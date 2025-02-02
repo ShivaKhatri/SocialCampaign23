@@ -47,7 +47,7 @@ return (
 
     async function populateUserData() {
         const token = localStorage.getItem('jwtToken');  // Ensure you have the token saved
-        const response = await fetch("https://localhost:53328/api/Users", {
+        const response = await fetch(`${ __API_BASE_URL__ }${ "/api/Users"}`, {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${token}`,

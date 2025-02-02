@@ -1,44 +1,46 @@
-﻿/* Ensure the body and app div take full height */
+﻿/* Ensure the body and .app div take the full viewport height */
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-/* Main app container */
+/* Main app container (top-level) */
 .app {
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the app takes full viewport height */
+    min-height: 100vh; /* Ensures the app covers entire viewport */
 }
 
 /* Main content area */
 .content {
-    flex: 1; /* Pushes footer down when content is small */
+    flex: 1; /* This grows to fill all available space, pushing the footer down */
     display: flex;
     flex-direction: column;
-    padding-top: 20px; /* Add some padding at the top to avoid touching the navbar */
-    padding-bottom: 20px; /* Add some padding at the bottom to avoid touching the footer */
+    padding-top: 20px; /* Optional spacing at the top */
+    padding-bottom: 20px; /* Optional spacing at the bottom */
 }
 
-/* Ensuring home-container fills the remaining space */
+/* Example: your home container can also take up space */
 .home-container {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     padding: 0 15px;
+    /* If you need vertical fill: flex: 1; */
 }
 
-/* Footer styles */
+/* Footer styles (NO position: fixed; here) */
 .footer-container {
     width: 100%;
-    background-color: white;
+    background: #72a3ed;
+    color: white;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
+    padding: 15px;
 }
 
-/* Fixes footer at the bottom when content is small */
+/* Additional styling for the footer */
 .footer {
     background-color: #72a3ed;
     color: white;

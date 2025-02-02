@@ -39,6 +39,9 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [plugin()],
+    define: {
+        __API_BASE_URL__: JSON.stringify("https://localhost:53328"),
+    },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
@@ -58,6 +61,12 @@ export default defineConfig({
                 secure: false,
                 changeOrigin: true,
             },
+            // Proxy routes for BusinessAds
+            '^/api/Businesses': {
+                target,
+                secure: false,
+                changeOrigin: true,
+            },
             // Proxy routes for CampaignLikes
             '^/api/CampaignLikes': {
                 target,
@@ -72,6 +81,23 @@ export default defineConfig({
             },
             // Proxy routes for Users
             '^/api/Users': {
+                target,
+                secure: false,
+                changeOrigin: true,
+            }, "^/profile_pictures": {
+                target,
+                secure: false,
+                changeOrigin: true,
+            }, "^/campaign_pictures": {
+                target,
+                secure: false,
+                changeOrigin: true,
+            }, "^ api/Campaigns/bycreator": {
+                target,
+                secure: false,
+                changeOrigin: true,
+            },
+            "^/api": {
                 target,
                 secure: false,
                 changeOrigin: true,

@@ -58,6 +58,10 @@ namespace SocialCampaign.Server.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -116,6 +120,10 @@ namespace SocialCampaign.Server.Migrations
 
                     b.Property<int?>("ApprovedById")
                         .HasColumnType("int");
+
+                    b.Property<string>("CampaignPicture")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

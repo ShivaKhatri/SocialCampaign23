@@ -1,5 +1,5 @@
 // businessAdService.js
-const API_BASE_URL = "https://localhost:53328/api/BusinessAds";
+const API_BASE_URL =  `${__API_BASE_URL__}${"/api/BusinessAds"}`;
 
 export const getAllBusinessAds = async () => {
     const response = await fetch(API_BASE_URL);

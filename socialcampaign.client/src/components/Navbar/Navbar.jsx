@@ -53,6 +53,7 @@ const Navbar = () => {
                                 </li>
                             </>
                         ) : (
+                          <>
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
@@ -61,7 +62,20 @@ const Navbar = () => {
                                 >
                                     Login
                                 </NavLink>
-                            </li>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink
+                                            className="nav-link"
+                                            to="/signup"
+                                            activeClassName="active"
+                                        >
+                                            Sign Up
+                                        </NavLink>
+                                    </li>
+
+
+                          </>
+
                         )}
                     </ul>
                 </div>

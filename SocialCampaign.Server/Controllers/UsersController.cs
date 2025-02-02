@@ -13,7 +13,7 @@ using System.Security.Claims;
 using Microsoft.Extensions.Configuration; // Add this
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-
+using Microsoft.Extensions.Logging;
 namespace SocialCampaign.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -22,21 +22,48 @@ namespace SocialCampaign.Server.Controllers
     {
         private readonly DatabaseConnection _context;
         private readonly IConfiguration _configuration; // Inject IConfiguration
-
+        private readonly ILogger<UsersController> _logger;
         // Constructor to inject DbContext and IConfiguration
-        public UsersController(DatabaseConnection context, IConfiguration configuration)
+        public UsersController(DatabaseConnection context, IConfiguration configuration, ILogger<UsersController> logger)
         {
             _context = context;
             _configuration = configuration;
+            _logger = logger;
         }
 
-        // GET: api/Users
         [HttpGet]
         [Authorize]  // Restrict access to authenticated users
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            return await _context.Users.ToListAsync();
+            try
+            {
+                _logger.LogInformation("Fetching all users...");
+
+                // ✅ Fetch users safely, handling potential NULL values
+                var users = await _context.Users
+                     .Select(user => new
+                     {
+                         user.UserId,
+                         user.FirstName,
+                         user.LastName,
+                         user.Email,
+                         user.UserType,
+                         ProfilePicture = user.ProfilePicture != null ? user.ProfilePicture : "", // ✅ Handle NULL values before selection
+                         user.CreatedAt
+                     })
+                     .ToListAsync();
+
+                _logger.LogInformation("Successfully retrieved {Count} users", users.Count);
+
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error fetching users");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Failed to fetch users." });
+            }
         }
+
 
         // GET: api/Users/5
         [HttpGet("{id}")]
@@ -84,78 +111,187 @@ namespace SocialCampaign.Server.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
         [HttpPost]
-        [AllowAnonymous]  // Allow access to unauthenticated users (for user registration)
-        public async Task<ActionResult<User>> PostUser(User user)
+        [AllowAnonymous]
+        public async Task<ActionResult<User>> PostUser()
         {
-            // Check if email already exists
-            if (_context.Users.Any(u => u.Email == user.Email))
+            try
             {
-                return Conflict(new { message = "A user with this email already exists." });
+                var form = Request.Form;
+                _logger.LogInformation($"Incoming Request Content-Type: {Request.ContentType}");
+
+                // Log received form data
+                _logger.LogInformation("Received Form Data Keys: {Keys}", string.Join(", ", form.Keys));
+
+                string firstName = form["FirstName"].FirstOrDefault() ?? "";
+                string lastName = form["LastName"].FirstOrDefault() ?? "";
+                string email = form["Email"].FirstOrDefault() ?? "";
+                string password = form["PasswordHash"].FirstOrDefault() ?? "";
+                string userType = form["UserType"].FirstOrDefault() ?? "User";
+
+                _logger.LogInformation($"FirstName: {firstName}, LastName: {lastName}, Email: {email}");
+
+                // ✅ Validate required fields
+                if (string.IsNullOrWhiteSpace(firstName) ||
+                    string.IsNullOrWhiteSpace(lastName) ||
+                    string.IsNullOrWhiteSpace(email) ||
+                    string.IsNullOrWhiteSpace(password))
+                {
+                    _logger.LogWarning("Missing required fields in form data.");
+                    return BadRequest(new { message = "All required fields must be provided." });
+                }
+
+                // ✅ Normalize email (lowercase for consistency)
+                string emailStr = email.ToLower();
+
+                // ✅ Ensure `emailStr` is a plain string before querying EF
+                bool emailExists = _context.Users.Any(u => u.Email == emailStr);
+                if (emailExists)
+                {
+                    _logger.LogWarning("Duplicate email found: {Email}", emailStr);
+                    return Conflict(new { message = "A user with this email already exists." });
+                }
+
+                // ✅ Create user object (ProfilePicture will be set later if file exists)
+                var user = new User
+                {
+                    FirstName = firstName,
+                    LastName = lastName,
+                    Email = emailStr,
+                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(password), // Hash password
+                    CreatedAt = DateTime.UtcNow,
+                    IsDeleted = false,
+                    UserType = userType,
+                    ProfilePicture = null // Will be updated if file is provided
+                };
+
+                // ✅ Handle ProfilePicture Upload
+                if (Request.Form.Files.Count > 0)
+                {
+                    _logger.LogInformation("File detected in request...");
+
+                    var profilePicture = Request.Form.Files["ProfilePicture"];
+
+                    if (profilePicture != null && profilePicture.Length > 0)
+                    {
+                        try
+                        {
+                            // Define storage path
+                            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
+
+                            // Ensure directory exists
+                            if (!Directory.Exists(uploadsFolder))
+                            {
+                                Directory.CreateDirectory(uploadsFolder);
+                                _logger.LogInformation("Created uploads directory: {Path}", uploadsFolder);
+                            }
+
+                            // Create unique filename
+                            string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(profilePicture.FileName)}";
+                            string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                            _logger.LogInformation("Saving file to: {Path}", filePath);
+
+                            // Save the file
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await profilePicture.CopyToAsync(stream);
+                            }
+
+                            // ✅ Save relative file path in database (matches your model)
+                            user.ProfilePicture = $"/profile_pictures/{uniqueFileName}";
+
+                            _logger.LogInformation("Profile picture saved successfully: {FilePath}", user.ProfilePicture);
+                        }
+                        catch (Exception fileEx)
+                        {
+                            _logger.LogError(fileEx, "Error occurred while saving profile picture.");
+                            return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Failed to upload profile picture." });
+                        }
+                    }
+                }
+
+                // ✅ Save user to database
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation("User saved successfully with ID: {UserId}", user.UserId);
+
+                // ✅ Return response excluding sensitive data
+                return CreatedAtAction("GetUser", new { id = user.UserId }, new
+                {
+                    user.UserId,
+                    user.FirstName,
+                    user.LastName,
+                    user.Email,
+                    user.UserType,
+                    user.ProfilePicture, // This now contains the saved file path
+                    user.CreatedAt
+                });
             }
-
-            // Set default values for CreatedAt, IsDeleted, and UserType if not provided
-            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
-            user.CreatedAt = DateTime.UtcNow;
-            user.IsDeleted = false;
-
-            if (string.IsNullOrWhiteSpace(user.UserType))
+            catch (Exception ex)
             {
-                user.UserType = "User"; // Default to "User" if not specified
+                _logger.LogError(ex, "Error creating user.");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = $"Internal server error: {ex.Message}" });
             }
-
-            // Save user to the database
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUser", new { id = user.UserId }, user);
         }
 
-        // Put: api/Users/id/upload-profile-picture
+
+
+
         // PUT: api/Users/{id}/upload-profile-picture
         [HttpPut("{id}/upload-profile-picture")]
-        [Authorize]  // Restrict access to authenticated users
+        [Authorize]
         public async Task<IActionResult> UploadProfilePicture(int id, IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
-                return BadRequest("No file uploaded.");
+                return BadRequest(new { message = "No file uploaded." });
             }
 
-            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
-            if (!Directory.Exists(uploadsFolder))
-            {
-                Directory.CreateDirectory(uploadsFolder);
-            }
-
-            var uniqueFileName = $"{Guid.NewGuid()}_{file.FileName}";
-            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await file.CopyToAsync(stream);
-            }
-
-            // Find the user by ID
             var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
-                return NotFound("User not found.");
+                return NotFound(new { message = "User not found." });
             }
 
-            // Store the relative file path in the database
-            user.ProfilePicture = $"/profile_pictures/{uniqueFileName}";
-            await _context.SaveChangesAsync();
+            try
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
 
-            // Return the URL of the uploaded image
-            var fileUrl = $"{Request.Scheme}://{Request.Host}/profile_pictures/{uniqueFileName}";
-            return Ok(new { imageUrl = fileUrl });
+                // Create the directory if it doesn't exist
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Update user profile picture path
+                user.ProfilePicture = $"/profile_pictures/{uniqueFileName}";
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation("Profile picture updated for User ID: {UserId}", user.UserId);
+
+                var fileUrl = $"{Request.Scheme}://{Request.Host}{user.ProfilePicture}";
+                return Ok(new { imageUrl = fileUrl });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error uploading profile picture.");
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Failed to upload profile picture." });
+            }
         }
+        
 
-
-        // DELETE: api/Users/5
-        [HttpDelete("{id}")]
+            // DELETE: api/Users/5
+            [HttpDelete("{id}")]
         [Authorize]  // Restrict access to authenticated users
         public async Task<IActionResult> DeleteUser(int id)
         {

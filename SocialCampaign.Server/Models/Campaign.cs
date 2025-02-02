@@ -40,6 +40,6 @@ namespace SocialCampaign.Server.Models
         [Required]
         public bool IsDeleted { get; set; }
 
-
+        public string CampaignPicture { get; set; } = "";
     }
 }

@@ -1,7 +1,7 @@
+/* Footer should have its own background, and full width */
 .footer {
     background-color: #72a3ed;
     color: white;
-    text-align: center;
-    padding: 15px 0;
     width: 100%;
+    padding: 15px 0;
 }
