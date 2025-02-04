@@ -42,11 +42,20 @@ const AdsManager = ({ businessId }) => {
         setFormData({ ...formData, image: e.target.files[0] });
     };
 
-    // Refresh ads after update
+    // Refresh ads after update and update the selectedAd if it's the one being updated
     const handleUpdateSuccess = async () => {
         const updatedAds = await getAdsByBusinessId(businessId);
         setAds(updatedAds);
+
+        // If the currently viewed ad was updated, update its data in the modal
+        if (selectedAd) {
+            const updatedAd = updatedAds.find(ad => ad.businessAdId === selectedAd.businessAdId);
+            if (updatedAd) {
+                setSelectedAd(updatedAd);
+            }
+        }
     };
+
 
     // Submit new ad
     const handlePostAd = async (e) => {
@@ -87,11 +96,20 @@ const AdsManager = ({ businessId }) => {
         }
     };
 
-    // Open Advertisement Modal
-    const handleViewAd = (ad) => {
-        setSelectedAd(ad);
-        setShowModal(true);
+    // Open Advertisement Modal and fetch updated ad details
+    const handleViewAd = async (ad) => {
+        try {
+            // Fetch the latest version of the ad from the backend
+            const latestAdData = ads.find(a => a.businessAdId === ad.businessAdId) || ad;
+            setSelectedAd(latestAdData);
+            setShowModal(true);
+        } catch (error) {
+            console.error("Error fetching updated ad:", error);
+            setSelectedAd(ad); // Fallback to current ad if fetch fails
+            setShowModal(true);
+        }
     };
+
 
     // Close Modal and Reset Selected Ad
     const handleCloseModal = () => {

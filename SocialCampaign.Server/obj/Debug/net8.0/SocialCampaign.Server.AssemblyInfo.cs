@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialCampaign.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1083050af227966a0433f6e121a8144a3cb1261d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03dc152fe14d82b1742fd1581d7fec57398324db")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialCampaign.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialCampaign.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

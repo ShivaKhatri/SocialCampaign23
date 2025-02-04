@@ -47,6 +47,46 @@ namespace SocialCampaign.Server.Controllers
 
             return campaign;
         }
+        // PATCH: api/Campaigns/{id}/status (Updates only the status of a campaign)
+        [HttpPatch("{id}/status")]
+        public async Task<IActionResult> UpdateCampaignStatus(int id, [FromBody] Dictionary<string, string> statusUpdate)
+        {
+            Console.WriteLine($"[DEBUG] Received PATCH request for Campaign ID: {id}");
+
+            var campaign = await _context.Campaigns.FindAsync(id);
+            if (campaign == null)
+            {
+                Console.WriteLine("[ERROR] Campaign not found.");
+                return NotFound(new { message = "Campaign not found." });
+            }
+
+            if (!statusUpdate.ContainsKey("status"))
+            {
+                Console.WriteLine("[ERROR] Missing status field in request.");
+                return BadRequest(new { message = "Status is required." });
+            }
+
+            string newStatus = statusUpdate["status"];
+
+            // Validate allowed statuses
+            if (!new[] { "Pending", "Approved", "Rejected", "Deleted" }.Contains(newStatus))
+            {
+                Console.WriteLine($"[ERROR] Invalid status value received: {newStatus}");
+                return BadRequest(new { message = "Invalid status value." });
+            }
+
+            Console.WriteLine($"[DEBUG] Updating status for Campaign ID {id} from '{campaign.Status}' to '{newStatus}'");
+
+            // Ensure only the status field is updated
+            campaign.Status = newStatus;
+            _context.Entry(campaign).Property(x => x.Status).IsModified = true; // Explicitly track only Status update
+
+            await _context.SaveChangesAsync();
+
+            Console.WriteLine($"[AFTER SAVE] Campaign - ID: {campaign.CampaignId}, Title: {campaign.Title}, Status: {campaign.Status}");
+
+            return Ok(new { message = "Status updated successfully.", updatedStatus = campaign.Status });
+        }
 
         // PUT: api/Campaigns/5
         [HttpPut("{id}")]
@@ -168,7 +208,21 @@ namespace SocialCampaign.Server.Controllers
             }
         }
 
+        // GET: api/Campaigns/approved
+        [HttpGet("approved")]
+        public async Task<IActionResult> GetApprovedCampaigns()
+        {
+            var approvedCampaigns = await _context.Campaigns
+                .Where(c => c.Status == "Approved")
+                .ToListAsync();
 
+            if (!approvedCampaigns.Any())
+            {
+                return NotFound(new { message = "No approved campaigns available." });
+            }
+
+            return Ok(approvedCampaigns);
+        }
 
         [HttpPost]
         [AllowAnonymous]

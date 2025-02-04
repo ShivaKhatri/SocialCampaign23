@@ -2,122 +2,68 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./advertisements.css";
 
-const adsData = [
-    {
-        id: 1,
-        image: "https://placehold.co/500",
-        title: "Customs Clearance",
-        description:
-            "Experience seamless shipping with our expert customs team. No hidden fees, no delays—just hassle-free deliveries every time.",
-        businessName: "Swift Logistics Co., Manila",
-        supporters: 54231,
-    },
-    {
-        id: 2,
-        image: "https://placehold.co/500",
-        title: "Affordable Office Rentals",
-        description:
-            "Discover modern office spaces tailored to startups and growing businesses with flexible leasing options and great locations.",
-        businessName: "SmartWork Hubs, Singapore",
-        supporters: 38765,
-    },
-    {
-        id: 3,
-        image: "https://placehold.co/500",
-        title: "Legal Help",
-        description:
-            "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
-        businessName: "BizLegal Solutions, Berlin",
-        supporters: 45820,
-    },
-    {
-        id: 3,
-        image: "https://placehold.co/500",
-        title: "Legal Help",
-        description:
-            "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
-        businessName: "BizLegal Solutions, Berlin",
-        supporters: 45820,
-    },
-    {
-        id: 3,
-        image: "https://placehold.co/500",
-        title: "Legal Help",
-        description:
-            "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
-        businessName: "BizLegal Solutions, Berlin",
-        supporters: 45820,
-    },
-    {
-        id: 3,
-        image: "https://placehold.co/500",
-        title: "Legal Help",
-        description:
-            "Simplify legal matters with our affordable plans designed to help small businesses succeed without breaking the bank.",
-        businessName: "BizLegal Solutions, Berlin",
-        supporters: 45820,
-    },
-
-    // Add more dummy items as needed
-];
-
-
-
-const Advertisement = () => {
+const Advertisement = ({ ads }) => {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    console.log("Ads received in Advertisement component:", ads); // Debugging log
+
+    if (!Array.isArray(ads) || ads.length === 0) {
+        console.log("No advertisements available.");
+        return <p className="text-center">No advertisements available.</p>;
+    }
 
     return (
         <div className="container mt-4">
             <div className="row">
-                {/* Active Section */}
+                {/* Active Ad Display */}
                 <div className="col-md-12 mb-4">
                     <div className="card">
-                        <div className=" g-0">
-                            <div className="">
+                        <div className="g-0">
+                            <div>
                                 <img
-                                    src={adsData[activeIndex].image}
-                                    className=" active-image"
-                                    alt="Active"
+                                    src={ads[activeIndex]?.imageUrl || "https://placehold.co/500"}
+                                    className="active-image"
+                                    alt={ads[activeIndex]?.title || "Advertisement"}
                                 />
                             </div>
-                            <div className="">
+                            <div>
                                 <div className="card-body">
                                     <h5 className="card-title text-primary">
-                                        {adsData[activeIndex].title}
+                                        {ads[activeIndex]?.title || "No Title"}
                                     </h5>
                                     <p className="card-text">
-                                        {adsData[activeIndex].description}
+                                        {ads[activeIndex]?.description || "No Description Available"}
                                     </p>
                                     <p className="card-text">
                                         <small className="text-muted">
-                                            {adsData[activeIndex].businessName}
+                                            {ads[activeIndex]?.businessName || "Unknown Business"}
                                         </small>
                                     </p>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* Thumbnail Section */}
+                {/* Ad Thumbnails */}
                 <div className="col-md-12">
-                    <div className="d-flex ad-elements  overflow-auto">
-                        {adsData.map((item, index) => (
+                    <div className="d-flex ad-elements overflow-auto">
+                        {ads.map((item, index) => (
                             <div
-                                key={item.id}
-                                className={`card me-2 ${activeIndex === index ? "border-primary" : ""
-                                    }`}
+                                key={item.businessAdId || `ad-${index}`}
+                                className={`card me-2 ${activeIndex === index ? "border-primary" : ""}`}
                                 style={{ minWidth: "150px", cursor: "pointer" }}
                                 onClick={() => setActiveIndex(index)}
                             >
                                 <img
-                                    src={item.image}
+                                    src={item.imageUrl || "https://placehold.co/500"}
                                     className="card-img-top"
-                                    alt={item.title}
+                                    alt={item.title || "Ad Thumbnail"}
                                 />
                                 <div className="card-body p-2">
-                                    <p className="card-text  small" style={{ fontWeight: "bold" }}>{item.title}</p>
+                                    <p className="card-text small" style={{ fontWeight: "bold" }}>
+                                        {item.title || "No Title"}
+                                    </p>
                                 </div>
                             </div>
                         ))}

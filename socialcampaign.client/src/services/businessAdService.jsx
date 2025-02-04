@@ -100,7 +100,18 @@ export const updateBusinessAdStatus = async (id, newStatus) => {
     return response.json();
 };
 
-
+export const getApprovedAds = async () => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/approved`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch approved ads. Status: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching approved ads:", error);
+        throw error;
+    }
+};
 
 //  Delete a business ad (Soft delete)
 export const deleteBusinessAd = async (id) => {

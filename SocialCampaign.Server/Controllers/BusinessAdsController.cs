@@ -150,7 +150,71 @@ public class BusinessAdsController : ControllerBase
 
 
 
+    // GET: api/Advertisements/approved
+    [HttpGet("approved")]
+    public async Task<IActionResult> GetApprovedAdvertisements()
+    {
+        var approvedAds = await _context.BusinessAds
+            .Where(ad => ad.Status == "Approved")
+            .ToListAsync();
 
+        if (!approvedAds.Any())
+        {
+            return NotFound(new { message = "No approved advertisements available." });
+        }
+
+        return Ok(approvedAds);
+    }
+    // PUT: api/BusinessAds/{id} (Updates an ad and sets status to "Pending")
+    [HttpPut("{id}")]
+    [Consumes("multipart/form-data")]
+    public async Task<IActionResult> UpdateBusinessAd(int id)
+    {
+        var formData = Request.Form;
+        var businessAd = await _context.BusinessAds.FindAsync(id);
+
+        if (businessAd == null)
+        {
+            return NotFound(new { message = "Ad not found." });
+        }
+
+        if (formData.ContainsKey("Title"))
+        {
+            businessAd.Title = formData["Title"];
+        }
+
+        if (formData.ContainsKey("Description"))
+        {
+            businessAd.Description = formData["Description"];
+        }
+
+        // Set status to "Pending" automatically
+        businessAd.Status = "Pending";
+
+        // Handle image update
+        if (Request.Form.Files.Count > 0)
+        {
+            var file = Request.Form.Files[0];
+            if (file.Length > 0)
+            {
+                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "business_ads");
+                Directory.CreateDirectory(uploadsFolder);
+
+                string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                businessAd.ImageUrl = $"/business_ads/{uniqueFileName}";
+            }
+        }
+
+        await _context.SaveChangesAsync();
+        return Ok(new { message = "Business ad updated successfully.", updatedAd = businessAd });
+    }
 
     // DELETE: api/BusinessAds/{id} (Soft delete)
     [HttpDelete("{id}")]

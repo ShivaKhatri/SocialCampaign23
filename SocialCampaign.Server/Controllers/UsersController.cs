@@ -427,7 +427,8 @@ namespace SocialCampaign.Server.Controllers
             {
                 firstName = user.FirstName,
                 lastName = user.LastName,
-                email = user.Email
+                email = user.Email,
+                profilePicture=user.ProfilePicture
             });
         }
 
