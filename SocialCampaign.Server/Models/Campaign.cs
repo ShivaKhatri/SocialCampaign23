@@ -41,5 +41,7 @@ namespace SocialCampaign.Server.Models
         public bool IsDeleted { get; set; }
 
         public string CampaignPicture { get; set; } = "";
+        public string Status { get; set; } = "Pending";  // Can be "Pending", "Approved", or "Rejected"
+
     }
 }

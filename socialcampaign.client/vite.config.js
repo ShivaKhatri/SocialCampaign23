@@ -61,6 +61,16 @@ export default defineConfig({
                 secure: false,
                 changeOrigin: true,
             },
+            '^/api/BusinessAds/business': {
+                target,
+                secure: false,
+                changeOrigin: true,
+            },
+            '^/business_ads': {
+                target,
+                secure: false,
+                changeOrigin: true,
+            },
             // Proxy routes for BusinessAds
             '^/api/Businesses': {
                 target,

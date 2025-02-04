@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text.Json.Serialization;
+
 namespace SocialCampaign.Server.Models
 {
     public class Business
@@ -28,15 +28,14 @@ namespace SocialCampaign.Server.Models
         [MaxLength(500)]
         public string Description { get; set; }
 
+        [ForeignKey("User")]
+        [Required]
+        public int userId { get; set; }
+
         [Required]
         public DateTime CreatedAt { get; set; }
-        [Required]
-
-        public string PasswordHash { get; set; }
         public DateTime? DeletedAt { get; set; }
 
-        [Required]
         public bool IsDeleted { get; set; }
-
     }
 }

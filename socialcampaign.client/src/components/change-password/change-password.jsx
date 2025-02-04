@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./change-password.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { changeUserPassword } from "../../services/userService";
+import { AuthContext } from "../context/AuthContext"; // Import Auth Context
 
 const ChangePassword = () => {
     const [newPassword, setNewPassword] = useState("");
@@ -12,8 +14,12 @@ const ChangePassword = () => {
     const [showNewPassword, setShowNewPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const navigate = useNavigate();
+    const { logout } = useContext(AuthContext); // Access logout function from context
 
-    const handleChangePassword = () => {
+    // Get userId from localStorage
+    const userId = localStorage.getItem("userId");
+
+    const handleChangePassword = async () => {
         if (!newPassword || !confirmPassword) {
             toast.warn("Please fill in all fields!", { position: "top-center", autoClose: 1500 });
             return;
@@ -29,28 +35,35 @@ const ChangePassword = () => {
             return;
         }
 
-        toast.success("Password changed successfully!", { position: "top-center", autoClose: 1500 });
-        setTimeout(() => {
-            navigate("/");
-        }, 1500);
+        try {
+            await changeUserPassword(userId, newPassword);
+            toast.success("Password changed successfully! Logging you out...", { position: "top-center", autoClose: 1500 });
+
+            setTimeout(() => {
+                logout(); // Log out the user
+                navigate("/"); // Redirect to login page
+            }, 200);
+        } catch (error) {
+            toast.error(error.message || "Failed to change password.");
+        }
     };
 
     return (
         <div className="changePasswordCont">
             <ToastContainer />
-           
             <div className="form-group">
-            <div className='logoCard'>
+                <div className='logoCard'>
                     <h3 className='text-primary'>Awareness App</h3>
                 </div>
                 <h4 className="text-center fs-4 mb-4">Change Password</h4>
+
                 <label htmlFor="newPassword" className="mt-4">New Password</label>
                 <div className="passwordFieldWrapper">
                     <input
                         type={showNewPassword ? "text" : "password"}
                         className="form-control"
                         id="newPassword"
-                        placeholder="enter new password"
+                        placeholder="Enter new password"
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
                     />
@@ -68,7 +81,7 @@ const ChangePassword = () => {
                         type={showConfirmPassword ? "text" : "password"}
                         className="form-control"
                         id="confirmPassword"
-                        placeholder="confirm new password"
+                        placeholder="Confirm new password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
                     />

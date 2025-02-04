@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -7,101 +8,161 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SocialCampaign.Server.Models;
 
-namespace SocialCampaign.Server.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class BusinessAdsController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class BusinessAdsController : ControllerBase
+    private readonly DatabaseConnection _context;
+
+    public BusinessAdsController(DatabaseConnection context)
     {
-        private readonly DatabaseConnection _context;
+        _context = context;
+    }
 
-        public BusinessAdsController(DatabaseConnection context)
+    // GET: api/BusinessAds (Returns only non-deleted ads)
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<BusinessAd>>> GetBusinessAds()
+    {
+        return await _context.BusinessAds
+            .Where(ad => !ad.IsDeleted)
+            .ToListAsync();
+    }
+
+    // GET: api/BusinessAds/{id}
+    [HttpGet("{id}")]
+    public async Task<ActionResult<BusinessAd>> GetBusinessAd(int id)
+    {
+        var businessAd = await _context.BusinessAds
+            .Where(ad => ad.BusinessAdId == id && !ad.IsDeleted)
+            .FirstOrDefaultAsync();
+
+        return businessAd == null ? NotFound(new { message = "Ad not found." }) : Ok(businessAd);
+    }
+
+    // GET: api/BusinessAds/business/{businessId}
+    [HttpGet("business/{businessId}")]
+    public async Task<ActionResult<IEnumerable<BusinessAd>>> GetAdsByBusinessId(int businessId)
+    {
+        var ads = await _context.BusinessAds
+            .Where(ad => ad.BusinessId == businessId && !ad.IsDeleted)
+            .ToListAsync();
+
+        return ads.Count == 0 ? Ok(new List<BusinessAd>()) : Ok(ads);
+    }
+
+    // POST: api/BusinessAds (Creates a new ad with image upload)
+    [HttpPost]
+    [Consumes("multipart/form-data")]
+    public async Task<ActionResult<BusinessAd>> PostBusinessAd()
+    {
+        var formData = Request.Form;
+
+        if (!formData.ContainsKey("BusinessId") || !int.TryParse(formData["BusinessId"], out int businessId) ||
+            string.IsNullOrWhiteSpace(formData["Title"]) ||
+            string.IsNullOrWhiteSpace(formData["Description"]))
         {
-            _context = context;
+            return BadRequest(new { message = "Missing required fields." });
         }
 
-        // GET: api/BusinessAds
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<BusinessAd>>> GetBusinessAds()
+        if (!await _context.Businesses.AnyAsync(b => b.BusinessId == businessId))
         {
-            return await _context.BusinessAds.ToListAsync();
+            return NotFound(new { message = "Business not found." });
         }
 
-        // GET: api/BusinessAds/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<BusinessAd>> GetBusinessAd(int id)
+        var newAd = new BusinessAd
         {
-            var businessAd = await _context.BusinessAds.FindAsync(id);
+            BusinessId = businessId,
+            Title = formData["Title"],
+            Description = formData["Description"],
+            CreatedAt = DateTime.UtcNow,
+            IsDeleted = false,
+            Status = "Pending", // Default status
+            ImageUrl = null
+        };
 
-            if (businessAd == null)
-            {
-                return NotFound();
-            }
-
-            return businessAd;
-        }
-
-        // PUT: api/BusinessAds/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutBusinessAd(int id, BusinessAd businessAd)
+        if (Request.Form.Files.Count > 0)
         {
-            if (id != businessAd.BusinessAdId)
+            var file = Request.Form.Files[0];
+            if (file.Length > 0)
             {
-                return BadRequest();
-            }
+                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "business_ads");
+                Directory.CreateDirectory(uploadsFolder);
 
-            _context.Entry(businessAd).State = EntityState.Modified;
+                string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BusinessAdExists(id))
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    return NotFound();
+                    await file.CopyToAsync(stream);
                 }
-                else
-                {
-                    throw;
-                }
+
+                newAd.ImageUrl = $"/business_ads/{uniqueFileName}";
             }
-
-            return NoContent();
         }
 
-        // POST: api/BusinessAds
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<BusinessAd>> PostBusinessAd(BusinessAd businessAd)
+        _context.BusinessAds.Add(newAd);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction(nameof(GetBusinessAd), new { id = newAd.BusinessAdId }, newAd);
+    }
+
+    // PATCH: api/BusinessAds/{id}/status (Updates only the status of an ad)
+    [HttpPatch("{id}/status")]
+    public async Task<IActionResult> UpdateAdStatus(int id, [FromBody] Dictionary<string, string> statusUpdate)
+    {
+        Console.WriteLine($"[DEBUG] Received PATCH request for BusinessAd ID: {id}");
+
+        var ad = await _context.BusinessAds.FindAsync(id);
+        if (ad == null)
         {
-            _context.BusinessAds.Add(businessAd);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetBusinessAd", new { id = businessAd.BusinessAdId }, businessAd);
+            Console.WriteLine("[ERROR] Ad not found.");
+            return NotFound(new { message = "Ad not found." });
         }
 
-        // DELETE: api/BusinessAds/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBusinessAd(int id)
+        if (!statusUpdate.ContainsKey("status"))
         {
-            var businessAd = await _context.BusinessAds.FindAsync(id);
-            if (businessAd == null)
-            {
-                return NotFound();
-            }
-
-            _context.BusinessAds.Remove(businessAd);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            Console.WriteLine("[ERROR] Missing status field in request.");
+            return BadRequest(new { message = "Status is required." });
         }
 
-        private bool BusinessAdExists(int id)
+        string newStatus = statusUpdate["status"];
+
+        // Validate allowed statuses
+        if (!new[] { "Pending", "Approved", "Rejected" }.Contains(newStatus))
         {
-            return _context.BusinessAds.Any(e => e.BusinessAdId == id);
+            Console.WriteLine($"[ERROR] Invalid status value received: {newStatus}");
+            return BadRequest(new { message = "Invalid status value." });
         }
+
+        Console.WriteLine($"[DEBUG] Updating status for BusinessAd ID {id} from '{ad.Status}' to '{newStatus}'");
+
+        // Ensure only the status field is updated
+        ad.Status = newStatus;
+        _context.Entry(ad).Property(x => x.Status).IsModified = true; // Explicitly track only Status update
+
+        await _context.SaveChangesAsync();
+
+        Console.WriteLine($"[AFTER SAVE] BusinessAd - ID: {ad.BusinessAdId}, Title: {ad.Title}, Description: {ad.Description}, Status: {ad.Status}");
+
+        return Ok(new { message = "Status updated successfully.", updatedStatus = ad.Status });
+    }
+
+
+
+
+
+
+    // DELETE: api/BusinessAds/{id} (Soft delete)
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteBusinessAd(int id)
+    {
+        var businessAd = await _context.BusinessAds.FindAsync(id);
+        if (businessAd == null) return NotFound(new { message = "Ad not found." });
+
+        businessAd.IsDeleted = true;
+        businessAd.DeletedAt = DateTime.UtcNow;
+
+        await _context.SaveChangesAsync();
+        return Ok(new { message = "Ad deleted successfully." });
     }
 }

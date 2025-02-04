@@ -330,27 +330,43 @@ namespace SocialCampaign.Server.Controllers
         }
 
         // DELETE: api/Campaigns/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCampaign(int id)
+[HttpDelete("{id}")]
+public async Task<IActionResult> DeleteCampaign(int id)
+{
+    _logger.LogInformation("Attempting to delete campaign with ID: {Id}", id);
+    var campaign = await _context.Campaigns.FindAsync(id);
+    
+    if (campaign == null)
+    {
+        _logger.LogWarning("Campaign with ID: {Id} not found for deletion.", id);
+        return NotFound();
+    }
+
+    // Delete the image file associated with the campaign
+    if (!string.IsNullOrEmpty(campaign.CampaignPicture))
+    {
+        try
         {
-            _logger.LogInformation("Attempting to delete campaign with ID: {Id}", id);
-            var campaign = await _context.Campaigns.FindAsync(id);
-            if (campaign == null)
+            var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "campaign_pictures", campaign.CampaignPicture);
+            if (System.IO.File.Exists(imagePath))
             {
-                _logger.LogWarning("Campaign with ID: {Id} not found for deletion.", id);
-                return NotFound();
+                System.IO.File.Delete(imagePath);
+                _logger.LogInformation("Deleted image: {Path}", imagePath);
             }
-
-            _context.Campaigns.Remove(campaign);
-            await _context.SaveChangesAsync();
-            _logger.LogInformation("Campaign with ID: {Id} deleted successfully.", id);
-
-            return NoContent();
         }
-
-        private bool CampaignExists(int id)
+        catch (Exception ex)
         {
-            return _context.Campaigns.Any(e => e.CampaignId == id);
+            _logger.LogError("Error deleting image: {Error}", ex.Message);
         }
+    }
+
+    _context.Campaigns.Remove(campaign);
+    await _context.SaveChangesAsync();
+    _logger.LogInformation("Campaign with ID: {Id} deleted successfully.", id);
+
+    return NoContent();
+}
+
+     
     }
 }

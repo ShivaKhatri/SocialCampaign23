@@ -1,0 +1,56 @@
+.business-list-container {
+	padding: 20px;
+	text-align: center;
+}
+
+.business-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.business-card {
+	background-color: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+	.business-card:hover {
+		transform: scale(1.05);
+	}
+
+	.business-card h3 {
+		margin-bottom: 10px;
+		color: #333;
+	}
+
+	.business-card p {
+		margin: 5px 0;
+		color: #666;
+	}
+
+.no-businesses {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.create-business-btn {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+	.create-business-btn:hover {
+		background-color: #0056b3;
+	}

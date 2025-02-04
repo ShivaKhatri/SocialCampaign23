@@ -30,7 +30,11 @@ namespace SocialCampaign.Server.Models
 
         [Required]
         public bool IsDeleted { get; set; }
+        // 🔹 New Status Column (Default: "Pending")
+        [Required]
+        [MaxLength(20)]
+        public string Status { get; set; } = "Pending";  // Can be "Pending", "Approved", or "Rejected"
 
-    
+
     }
 }

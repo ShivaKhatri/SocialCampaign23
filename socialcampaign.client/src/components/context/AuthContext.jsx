@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from "react";
 
 // Create Context
 export const AuthContext = createContext();
@@ -6,65 +6,63 @@ export const AuthContext = createContext();
 // Helper function to check if a JWT is expired
 function isTokenExpired(token) {
     try {
-        const payload = JSON.parse(atob(token.split('.')[1])); // decode the JWT payload
-        // JWT `exp` is in seconds; convert to milliseconds for comparison
-        return Date.now() >= payload.exp * 1000;
+        const payload = JSON.parse(atob(token.split(".")[1])); // Decode JWT payload
+        return Date.now() >= payload.exp * 1000; // Compare with current time
     } catch (error) {
-        // If there's any error decoding, consider the token invalid
-        return true;
+        return true; // If there's an error decoding, consider the token invalid
     }
 }
 
 export const AuthProvider = ({ children }) => {
-    // On initial load, retrieve any stored token from localStorage or sessionStorage
     const storedToken =
-        localStorage.getItem('jwtToken') || sessionStorage.getItem('jwtToken');
+        localStorage.getItem("jwtToken") || sessionStorage.getItem("jwtToken");
 
-    // Initialize state with a valid token if it exists
     const [token, setToken] = useState(() => {
-        if (storedToken) {
-            // Check if the existing token is expired
-            if (isTokenExpired(storedToken)) {
-                localStorage.removeItem('jwtToken');
-                sessionStorage.removeItem('jwtToken');
-                return null;
-            }
+        if (storedToken && !isTokenExpired(storedToken)) {
             return storedToken;
+        } else {
+            localStorage.removeItem("jwtToken");
+            sessionStorage.removeItem("jwtToken");
+            return null;
         }
-        return null;
     });
 
     const [isLoggedIn, setIsLoggedIn] = useState(Boolean(token));
 
-    // Keep `isLoggedIn` in sync with `token`
+    // Auto logout if token expires
     useEffect(() => {
-        setIsLoggedIn(Boolean(token));
+        if (token && isTokenExpired(token)) {
+            console.log("Token expired. Logging out...");
+            logout();
+        }
     }, [token]);
 
-    // LOGIN: Accept a token and a "rememberMe" flag
+    // Login: Store the token securely
     const login = useCallback((newToken, rememberMe = false) => {
-        if (!newToken) return;
-
-        // If token is already expired, do nothing
-        if (isTokenExpired(newToken)) {
+        if (!newToken || isTokenExpired(newToken)) {
             console.error("Received an expired or invalid token.");
             return;
         }
 
         setToken(newToken);
-        // Decide where to store the token
+        setIsLoggedIn(true);
+
         if (rememberMe) {
-            localStorage.setItem('jwtToken', newToken);
+            localStorage.setItem("jwtToken", newToken);
         } else {
-            sessionStorage.setItem('jwtToken', newToken);
+            sessionStorage.setItem("jwtToken", newToken);
         }
     }, []);
 
-    // LOGOUT: Clear everything
+    // Logout: Clear everything
     const logout = useCallback(() => {
-        localStorage.removeItem('jwtToken');
-        sessionStorage.removeItem('jwtToken');
+        console.log("Logging out...");
+        localStorage.removeItem("jwtToken");
+        sessionStorage.removeItem("jwtToken");
+        localStorage.removeItem("userId"); // Also remove user ID
+        sessionStorage.clear(); // Clear all session storage
         setToken(null);
+        setIsLoggedIn(false);
     }, []);
 
     return (

@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration; // Add this
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.Extensions.Logging;
+using System.Text.Json;
 namespace SocialCampaign.Server.Controllers
 {
     [Route("api/[controller]")]
@@ -39,7 +40,7 @@ namespace SocialCampaign.Server.Controllers
             {
                 _logger.LogInformation("Fetching all users...");
 
-                // ✅ Fetch users safely, handling potential NULL values
+                //  Fetch users safely, handling potential NULL values
                 var users = await _context.Users
                      .Select(user => new
                      {
@@ -48,7 +49,7 @@ namespace SocialCampaign.Server.Controllers
                          user.LastName,
                          user.Email,
                          user.UserType,
-                         ProfilePicture = user.ProfilePicture != null ? user.ProfilePicture : "", // ✅ Handle NULL values before selection
+                         ProfilePicture = user.ProfilePicture != null ? user.ProfilePicture : "", //  Handle NULL values before selection
                          user.CreatedAt
                      })
                      .ToListAsync();
@@ -242,9 +243,12 @@ namespace SocialCampaign.Server.Controllers
         // PUT: api/Users/{id}/upload-profile-picture
         [HttpPut("{id}/upload-profile-picture")]
         [Authorize]
-        public async Task<IActionResult> UploadProfilePicture(int id, IFormFile file)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadProfilePicture(int id)
         {
-            if (file == null || file.Length == 0)
+            _logger.LogInformation("UploadProfilePicture endpoint hit for User ID: {UserId}.", id);
+
+            if (Request.Form.Files.Count == 0)
             {
                 return BadRequest(new { message = "No file uploaded." });
             }
@@ -257,29 +261,32 @@ namespace SocialCampaign.Server.Controllers
 
             try
             {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
+                var file = Request.Form.Files[0];
 
-                // Create the directory if it doesn't exist
+                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "profile_pictures");
+
                 if (!Directory.Exists(uploadsFolder))
                 {
                     Directory.CreateDirectory(uploadsFolder);
+                    _logger.LogInformation("Created directory: {UploadsFolder}", uploadsFolder);
                 }
 
-                var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                string uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(file.FileName)}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
 
-                // Update user profile picture path
+                // Save only the relative path
                 user.ProfilePicture = $"/profile_pictures/{uniqueFileName}";
                 await _context.SaveChangesAsync();
 
-                _logger.LogInformation("Profile picture updated for User ID: {UserId}", user.UserId);
+                string fileUrl = $"{Request.Scheme}://{Request.Host}{user.ProfilePicture}";
 
-                var fileUrl = $"{Request.Scheme}://{Request.Host}{user.ProfilePicture}";
+                _logger.LogInformation("Profile picture updated successfully for User ID: {UserId}", user.UserId);
+
                 return Ok(new { imageUrl = fileUrl });
             }
             catch (Exception ex)
@@ -288,10 +295,11 @@ namespace SocialCampaign.Server.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Failed to upload profile picture." });
             }
         }
-        
 
-            // DELETE: api/Users/5
-            [HttpDelete("{id}")]
+
+
+        // DELETE: api/Users/5
+        [HttpDelete("{id}")]
         [Authorize]  // Restrict access to authenticated users
         public async Task<IActionResult> DeleteUser(int id)
         {
@@ -362,11 +370,119 @@ namespace SocialCampaign.Server.Controllers
                 token = jwtToken
             });
         }
+        // PUT: api/Users/{id}/change-password
+        [HttpPut("{id}/change-password")]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword(int id, [FromBody] PasswordUpdateModel model)
+        {
+            if (string.IsNullOrWhiteSpace(model.NewPassword) || model.NewPassword.Length < 8)
+            {
+                return BadRequest(new { message = "Password must be at least 8 characters long." });
+            }
+
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound(new { message = "User not found." });
+            }
+
+            try
+            {
+                // Hash the new password
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
+
+                // Save to database
+                await _context.SaveChangesAsync();
+
+                _logger.LogInformation("Password changed successfully for User ID: {UserId}", user.UserId);
+                return Ok(new { message = "Password updated successfully." });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating password for User ID: {UserId}", id);
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "Failed to update password." });
+            }
+        }
+
+        // Model for password update
+        public class PasswordUpdateModel
+        {
+            public string NewPassword { get; set; }
+        }
+        // GET: api/Users/{id/userinfo}
+        [HttpGet("{id}/userinfo")]
+        [Authorize]
+        public async Task<IActionResult> GetUserInfo(int id)
+        {
+            _logger.LogInformation("Fetching user information for user ID: {Id}", id);
+
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                _logger.LogWarning("User with ID: {Id} not found.", id);
+                return NotFound(new { message = "User not found." });
+            }
+
+            return Ok(new
+            {
+                firstName = user.FirstName,
+                lastName = user.LastName,
+                email = user.Email
+            });
+        }
+
+        // PUT: api/Users/{id}/update-info
+        [HttpPut("{id}/update-info")]
+        [Authorize] // Ensures only authenticated users can update info
+        public async Task<IActionResult> UpdateUserInfo(int id, [FromBody] JsonElement jsonData)
+        {
+            try
+            {
+                var user = await _context.Users.FindAsync(id);
+                if (user == null)
+                {
+                    return NotFound(new { message = "User not found." });
+                }
+
+                // Extract values from JSON (no DTO)
+                string firstName = jsonData.GetProperty("firstName").GetString();
+                string lastName = jsonData.GetProperty("lastName").GetString();
+                string email = jsonData.GetProperty("email").GetString();
+
+                // Validation
+                if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName) || string.IsNullOrWhiteSpace(email))
+                {
+                    return BadRequest(new { message = "All fields (firstName, lastName, email) are required." });
+                }
+
+                // Update the user
+                user.FirstName = firstName;
+                user.LastName = lastName;
+                user.Email = email;
+
+                _context.Entry(user).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    message = "User information updated successfully.",
+                    firstName = user.FirstName,
+                    lastName = user.LastName,
+                    email = user.Email
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating user information.");
+                return StatusCode(500, new { message = "Internal server error. Please try again later." });
+            }
+        }
 
         public class LoginRequest
         {
             public string Email { get; set; }
             public string Password { get; set; }
         }
+
     }
 }

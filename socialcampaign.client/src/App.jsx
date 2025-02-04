@@ -13,6 +13,14 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'; // Import the Footer component
 import ProtectedRoute from './components/ProtectedRoute';  // Import the ProtectedRoute component
 import { UserProvider } from './components/context/UserContext';
+
+//  Missing Imports Added
+import PromotionalManagement from './components/PromotionalManagement/PromotionalManagement';
+import UserManagement from './components/UserManagement/UserManagement';
+import ContentModeration from './components/ContentModeration/ContentModeration';
+import CauseManagement from './components/CauseManagement/CauseManagement';
+import BusinessManagement from './components/BusinessManagement/BusinessManagement';
+
 // Layout component that includes the Navbar and Footer
 const Layout = () => {
     return (
@@ -60,6 +68,46 @@ function App() {
                     element: (
                         <ProtectedRoute>
                             <BusinessProfile />
+                        </ProtectedRoute>
+                    ),
+                },
+                {
+                    path: "/PromotionalManagement",
+                    element: (
+                        <ProtectedRoute>
+                            <PromotionalManagement />
+                        </ProtectedRoute>
+                    ),
+                },
+                {
+                    path: "/UserManagement",
+                    element: (
+                        <ProtectedRoute>
+                            <UserManagement />
+                        </ProtectedRoute>
+                    ),
+                },
+                {
+                    path: "/ContentModeration",
+                    element: (
+                        <ProtectedRoute>
+                            <ContentModeration />
+                        </ProtectedRoute>
+                    ),
+                },
+                {
+                    path: "/CauseManagement",
+                    element: (
+                        <ProtectedRoute>
+                            <CauseManagement />
+                        </ProtectedRoute>
+                    ),
+                },
+                {
+                    path: "/BusinessManagement",
+                    element: (
+                        <ProtectedRoute>
+                            <BusinessManagement />
                         </ProtectedRoute>
                     ),
                 },

@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Profile.css";
 // Import your delete, update, and create services
 import { deleteCampaign, updateCampaign } from "../../services/campaignService";
-
+import { updateUserProfilePicture } from "../../services/userService";
 const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" }) => {
     // Initialize the active tab key based on the prop
     const [activeKey, setActiveKey] = useState(activeTab);
@@ -52,22 +52,48 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
     const [selectedNotification, setSelectedNotification] = useState(null);
 
     // Handlers for profile image (for user profile, not campaign)
+    const [imageFile, setImageFile] = useState(null);
+
     const handleImageChange = (e) => {
         if (e.target.files && e.target.files[0]) {
-            setImage(URL.createObjectURL(e.target.files[0]));
+            const file = e.target.files[0];
+            setImage(URL.createObjectURL(file)); //  Show preview immediately
+            setImageFile(file); //  Store file for upload
         } else {
             toast.error("Failed to load image. Please try again.");
         }
     };
 
-    const handleSaveImage = () => {
-        if (image === initialImage) {
-            toast.warn("No changes are made!", { position: "top-center", autoClose: 1500 });
-        } else {
-            setInitialImage(image);
-            toast.success("Profile image changed successfully!", { position: "top-center", autoClose: 1500 });
+    const handleSaveImage = async () => {
+        if (!imageFile) {
+            toast.warn("No new image selected!", { position: "top-center", autoClose: 1500 });
+            return;
+        }
+
+        try {
+            const formData = new FormData();
+            formData.append("file", imageFile); // Ensure "file" matches backend key
+
+            console.log("Uploading profile picture...");
+            const response = await updateUserProfilePicture(user.id, formData);
+
+            if (response.imageUrl) {
+                const newImageUrl = `${response.imageUrl}?t=${Date.now()}`; // Force reload
+                setImage(newImageUrl);
+                setInitialImage(newImageUrl);
+
+                toast.success("Profile image updated successfully!", { position: "top-center", autoClose: 1500 });
+            } else {
+                toast.error("Failed to retrieve new profile picture.");
+            }
+        } catch (error) {
+            toast.error("Error updating profile picture.");
+            console.error("Profile Picture Upload Error:", error);
         }
     };
+
+
+
 
     // Handler for opening the detail modal when "Show More" is clicked
     const handleShowMore = (campaign) => {
@@ -106,11 +132,26 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
 
     // Updated saveCampaign function that builds a FormData object and calls the updateCampaign service.
     const saveCampaign = async () => {
-        const { title, description, image, id, file } = selectedCampaign;
-        const startDate = selectedCampaign.startDate;
-        const endDate = selectedCampaign.endDate;
+        if (!selectedCampaign) {
+            toast.error("No campaign selected for update.", {
+                position: "top-center",
+                autoClose: 1500,
+            });
+            return;
+        }
 
-        if (!title || !description || !image || !startDate || !endDate) {
+        const { title, description, image, id, file, startDate, endDate } = selectedCampaign;
+
+        // Check if the ID is valid before making API calls
+        if (!id) {
+            toast.error("Campaign ID is missing. Update failed.", {
+                position: "top-center",
+                autoClose: 1500,
+            });
+            return;
+        }
+
+        if (!title || !description || !startDate || !endDate) {
             toast.error("All fields are required. Changes are not saved.", {
                 position: "top-center",
                 autoClose: 1500,
@@ -124,38 +165,53 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
             formData.append("Description", description);
             formData.append("StartDate", startDate);
             formData.append("EndDate", endDate);
+            formData.append("CampaignId", id); // Ensure ID is sent
 
             if (file) {
                 formData.append("CampaignPicture", file);
             }
-            formData.append("CampaignId", id);
+
+            // Debugging: Log the request payload before calling API
+            console.log("Updating campaign with ID:", id);
+            console.log("FormData Entries:", Object.fromEntries(formData.entries()));
 
             // Call update API
             const updatedCampaignResponse = await updateCampaign(id, formData);
 
-            // Force image reload by appending a timestamp
-            const updatedCampaign = {
-                ...updatedCampaignResponse,
-                image: `${updatedCampaignResponse.CampaignPicture}?t=${Date.now()}`,  // <- Cache Buster
-            };
+            // Ensure `CampaignPicture` is defined
+            const updatedImageUrl = updatedCampaignResponse.CampaignPicture
+                ? `${updatedCampaignResponse.CampaignPicture}?t=${Date.now()}`
+                : image; // Keep existing image if update fails
 
-            // Update the state list
+            // Update state: Ensure ID is preserved correctly
             setCampaignList((prev) =>
-                prev.map((c) => (c.id === id ? updatedCampaign : c))
+                prev.map((c) =>
+                    c.id === id
+                        ? { ...c, ...updatedCampaignResponse, id, image: updatedImageUrl }
+                        : c
+                )
             );
+
+            // If the updated campaign is currently being viewed, update its state too
+            if (viewCampaign && viewCampaign.id === id) {
+                setViewCampaign((prev) => ({ ...prev, id, image: updatedImageUrl }));
+            }
 
             toast.success("Campaign updated successfully!", {
                 position: "top-center",
                 autoClose: 1500,
             });
+
+            setShowModal(false);
         } catch (error) {
+            console.error("Update Campaign Error:", error);
             toast.error("Failed to update campaign. Please try again.", {
                 position: "top-center",
                 autoClose: 1500,
             });
         }
-        setShowModal(false);
     };
+
 
 
 
@@ -174,17 +230,32 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
 
     // Delete campaign handler with confirmation
     const handleDeleteCampaign = async (campaignId) => {
+        if (!campaignId) {
+            toast.error("Campaign ID is missing. Cannot delete.");
+            return;
+        }
+
         if (window.confirm("Are you sure you want to delete this campaign?")) {
             try {
-                await deleteCampaign(campaignId);
+                console.log("Deleting campaign with ID:", campaignId); // Debugging log
+
+                await deleteCampaign(campaignId); // Call backend delete function
+
+                // Remove the deleted campaign from local state
                 setCampaignList((prev) => prev.filter((c) => c.id !== campaignId));
-                toast.success("Campaign deleted successfully!", { position: "top-center", autoClose: 1500 });
+
+                // Close any open modals
                 setShowDetailModal(false);
+                setShowModal(false);
+
+                toast.success("Campaign deleted successfully!", { position: "top-center", autoClose: 1500 });
             } catch (error) {
+                console.error("Delete Campaign Error:", error);
                 toast.error("Failed to delete campaign", { position: "top-center", autoClose: 1500 });
             }
         }
     };
+
     useEffect(() => {
         setCampaignList(campaignsProp.map(campaign => ({
             ...campaign,
@@ -467,6 +538,9 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
                     )}
                 </Modal.Body>
                 <Modal.Footer>
+                    <Button variant="danger" onClick={() => handleDeleteCampaign(selectedCampaign.id)}>
+                        Delete
+                    </Button>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>
                         Close
                     </Button>
@@ -475,6 +549,7 @@ const Profile = ({ user, campaigns: campaignsProp = [], activeTab = "profile" })
                     </Button>
                 </Modal.Footer>
             </Modal>
+
 
             {/* Modal for Viewing Notification Details */}
             <Modal show={selectedNotification !== null} onHide={() => setSelectedNotification(null)}>

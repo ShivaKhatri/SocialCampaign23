@@ -100,8 +100,11 @@ export const deleteCampaign = async (id) => {
     const response = await fetch(`${API_BASE_URL}/${id}`, {
         method: "DELETE",
     });
+
     if (!response.ok) {
         throw new Error("Failed to delete campaign");
     }
-    return response.json();
+
+    return; // Do NOT call response.json() since the server returns no content
 };
+
