@@ -105,6 +105,24 @@ const ChangeInfo = ({ type, businessId,onUpdateSuccess }) => {
             toast.error(error.message || "Failed to update information.");
         }
     };
+    //const handleDeleteAccount = async () => {
+    //    if (!window.confirm("Are you sure you want to delete this business? This action cannot be undone.")) {
+    //        return;
+    //    }
+
+    //    try {
+    //        await deleteBusiness(businessId);
+    //        toast.success("Business deleted successfully!", { position: "top-center", autoClose: 1500 });
+
+    //        setTimeout(() => {
+    //            if (onUpdateSuccess) onUpdateSuccess();
+    //        }, 1000);
+    //    } catch (error) {
+    //        console.error("Error deleting business:", error);
+    //        toast.error(error.message || "Failed to delete business.");
+    //    }
+
+    //};
     const handleDelete = async () => {
         if (!window.confirm("Are you sure you want to delete this business? This action cannot be undone.")) {
             return;
@@ -121,6 +139,7 @@ const ChangeInfo = ({ type, businessId,onUpdateSuccess }) => {
             console.error("Error deleting business:", error);
             toast.error(error.message || "Failed to delete business.");
         }
+        
     };
     if (loading) {
         return <div>Loading business details...</div>;
@@ -168,6 +187,14 @@ const ChangeInfo = ({ type, businessId,onUpdateSuccess }) => {
                                 value={formData.email}
                                 onChange={handleChange}
                             />
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center mt-3">
+                            <button type="submit" className="btn btn-primary">
+                                Save
+                            </button>
+                            {/*<button type="button" className="btn btn-danger" onClick={handleDelete}>*/}
+                            {/*    Delete Account*/}
+                            {/*</button>*/}
                         </div>
                     </>
                 ) : (
@@ -226,17 +253,18 @@ const ChangeInfo = ({ type, businessId,onUpdateSuccess }) => {
                                 value={formData.Description}
                                 onChange={handleChange}
                             ></textarea>
-                        </div>
+                            </div>
+                            <div className="d-flex justify-content-between align-items-center mt-3">
+                                <button type="submit" className="btn btn-primary">
+                                    Save
+                                </button>
+                                <button type="button" className="btn btn-danger" onClick={handleDelete}>
+                                    Delete Business
+                                </button>
+                            </div>
                     </>
                 )}
-                <div className="d-flex justify-content-between align-items-center mt-3">
-                    <button type="submit" className="btn btn-primary">
-                        Save
-                    </button>
-                    <button type="button" className="btn btn-danger" onClick={handleDelete}>
-                        Delete Business
-                    </button>
-                </div>
+              
 
 
             </form>

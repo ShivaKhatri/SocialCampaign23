@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dDbOzyv5QzFy8BnLIiU3QDUkzMf+YmeDLXEQaQ0DB3A=",
+  "Hash": "n+lPVB9rgXxIxFpHFt3uPNco3a984bH7KidOBqx+YIw=",
   "Source": "SocialCampaign.Server",
   "BasePath": "_content/SocialCampaign.Server",
   "Mode": "Default",
@@ -302,6 +302,27 @@
       "OriginalItemSpec": "wwwroot\\business_ads\\bd47d85e-a085-4d4a-8f7e-6e29496cc768_Screenshot 2025-01-29 090431.png"
     },
     {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\business_ads\\c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png",
+      "SourceId": "SocialCampaign.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\",
+      "BasePath": "_content/SocialCampaign.Server",
+      "RelativePath": "business_ads/c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2xn5is1wq1",
+      "Integrity": "qqVPcyiuzgOU1mOLDCXlz15mkRm7deR6wtVMQ0ZyzfM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\business_ads\\c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png"
+    },
+    {
       "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\business_ads\\c210cee8-a181-46ed-bcd3-b02639b16bbb_gannt chart.png",
       "SourceId": "SocialCampaign.Server",
       "SourceType": "Discovered",
@@ -468,6 +489,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\campaign_pictures\\07acadfe-c2b5-42d0-b63f-703df03c5665_2020-08-31.png"
+    },
+    {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png",
+      "SourceId": "SocialCampaign.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\",
+      "BasePath": "_content/SocialCampaign.Server",
+      "RelativePath": "campaign_pictures/1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7llh7wgije",
+      "Integrity": "i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\campaign_pictures\\1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png"
     },
     {
       "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\12a686c3-f227-415c-ae86-988d80f4e8b2_Screenshot 2025-01-29 090431.png",
@@ -1037,6 +1079,27 @@
       "OriginalItemSpec": "wwwroot\\campaign_pictures\\a4d96ff6-6f2e-45a5-aa55-e8902b2b5e3c_Screenshot 2024-12-20 103728.png"
     },
     {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png",
+      "SourceId": "SocialCampaign.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\",
+      "BasePath": "_content/SocialCampaign.Server",
+      "RelativePath": "campaign_pictures/a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5seau5yjsi",
+      "Integrity": "q6QfO907OQe7ExgIElE8k9Xqp6b1SRaMz3EWGvkXKzk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\campaign_pictures\\a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png"
+    },
+    {
       "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\a8a56647-4830-4c10-bce3-4dfc344b244d_cranky shit.png",
       "SourceId": "SocialCampaign.Server",
       "SourceType": "Discovered",
@@ -1392,6 +1455,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\profile_pictures\\40c7a8b9-49ab-4337-8380-063e14fd8ad6_Screenshot 2024-12-11 022542.png"
+    },
+    {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png",
+      "SourceId": "SocialCampaign.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\",
+      "BasePath": "_content/SocialCampaign.Server",
+      "RelativePath": "profile_pictures/4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cs349vbqov",
+      "Integrity": "1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile_pictures\\4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png"
+    },
+    {
+      "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png",
+      "SourceId": "SocialCampaign.Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\",
+      "BasePath": "_content/SocialCampaign.Server",
+      "RelativePath": "profile_pictures/4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cs349vbqov",
+      "Integrity": "1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile_pictures\\4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png"
     },
     {
       "Identity": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\6f479c89-32ec-434c-881e-15ad7535af68_133801603101299118.jpg",
@@ -2630,6 +2735,88 @@
       ]
     },
     {
+      "Route": "business_ads/c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.2xn5is1wq1.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\business_ads\\c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48894"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qqVPcyiuzgOU1mOLDCXlz15mkRm7deR6wtVMQ0ZyzfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2xn5is1wq1"
+        },
+        {
+          "Name": "label",
+          "Value": "business_ads/c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qqVPcyiuzgOU1mOLDCXlz15mkRm7deR6wtVMQ0ZyzfM="
+        }
+      ]
+    },
+    {
+      "Route": "business_ads/c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\business_ads\\c17eda35-e207-4e13-aba2-1c3dd73c27f9_Screenshot 2025-01-06 120528.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48894"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qqVPcyiuzgOU1mOLDCXlz15mkRm7deR6wtVMQ0ZyzfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:23:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qqVPcyiuzgOU1mOLDCXlz15mkRm7deR6wtVMQ0ZyzfM="
+        }
+      ]
+    },
+    {
       "Route": "business_ads/c210cee8-a181-46ed-bcd3-b02639b16bbb_gannt chart.5h0odios44.png",
       "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\business_ads\\c210cee8-a181-46ed-bcd3-b02639b16bbb_gannt chart.png",
       "Selectors": [],
@@ -3272,6 +3459,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Sun, 02 Feb 2025 22:52:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w="
+        }
+      ]
+    },
+    {
+      "Route": "campaign_pictures/1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.7llh7wgije.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "371697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:22:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7llh7wgije"
+        },
+        {
+          "Name": "label",
+          "Value": "campaign_pictures/1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w="
+        }
+      ]
+    },
+    {
+      "Route": "campaign_pictures/1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\1223b83b-71e6-4a1b-8d14-bd6bfb35d0a0_2020-08-31.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "371697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:22:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5500,6 +5769,88 @@
       ]
     },
     {
+      "Route": "campaign_pictures/a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.5seau5yjsi.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6QfO907OQe7ExgIElE8k9Xqp6b1SRaMz3EWGvkXKzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 09:37:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5seau5yjsi"
+        },
+        {
+          "Name": "label",
+          "Value": "campaign_pictures/a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6QfO907OQe7ExgIElE8k9Xqp6b1SRaMz3EWGvkXKzk="
+        }
+      ]
+    },
+    {
+      "Route": "campaign_pictures/a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\a5bac45e-7560-402d-937d-8d6d0f17b7e1_Screenshot 2025-01-29 090431.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6QfO907OQe7ExgIElE8k9Xqp6b1SRaMz3EWGvkXKzk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 09:37:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6QfO907OQe7ExgIElE8k9Xqp6b1SRaMz3EWGvkXKzk="
+        }
+      ]
+    },
+    {
       "Route": "campaign_pictures/a8a56647-4830-4c10-bce3-4dfc344b244d_cranky shit.cs349vbqov.png",
       "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\campaign_pictures\\a8a56647-4830-4c10-bce3-4dfc344b244d_cranky shit.png",
       "Selectors": [],
@@ -6890,6 +7241,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Poezd7DtCR1btUUfflRiR7Ezyva8X2hjFHRI8/9F6p0="
+        }
+      ]
+    },
+    {
+      "Route": "profile_pictures/4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.cs349vbqov.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cs349vbqov"
+        },
+        {
+          "Name": "label",
+          "Value": "profile_pictures/4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ="
+        }
+      ]
+    },
+    {
+      "Route": "profile_pictures/4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4ba87a5d-6f59-459b-9785-a05fb1fb2d48_cranky shit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ="
+        }
+      ]
+    },
+    {
+      "Route": "profile_pictures/4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.cs349vbqov.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:13:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cs349vbqov"
+        },
+        {
+          "Name": "label",
+          "Value": "profile_pictures/4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ="
+        }
+      ]
+    },
+    {
+      "Route": "profile_pictures/4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png",
+      "AssetFile": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\wwwroot\\profile_pictures\\4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 15:13:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ="
         }
       ]
     },

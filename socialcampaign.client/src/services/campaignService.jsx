@@ -94,6 +94,34 @@ export const updateCampaign = async (id, formData) => {
     }
 };
 
+export const getApprovedCampaigns = async () => {
+    try {
+        const response = await fetch(`${API_BASE_URL}/approved`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch approved campaigns: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching approved campaigns:", error);
+        throw error;
+    }
+};
+
+export const updateCampaignStatus = async (id, newStatus) => {
+    const response = await fetch(`${API_BASE_URL}/${id}/status`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ status: newStatus }),
+    });
+
+    if (!response.ok) {
+        throw new Error("Failed to update campaign status");
+    }
+
+    return response.json();
+};
 
 
 export const deleteCampaign = async (id) => {

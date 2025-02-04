@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Card, Table, Button, Modal } from "react-bootstrap";
+import { Row, Col, Card, Table, Button, Modal, Badge, Dropdown } from "react-bootstrap";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getAllCampaigns, updateCampaign, getCampaignById } from "../../services/campaignService";
+import { getAllCampaigns, updateCampaignStatus } from "../../services/campaignService";
+import { getUserInfo } from "../../services/userService";
 
 const CauseManagement = () => {
     const [campaigns, setCampaigns] = useState([]);
@@ -15,7 +16,6 @@ const CauseManagement = () => {
         const fetchCampaigns = async () => {
             try {
                 const data = await getAllCampaigns();
-                console.log(data);
                 setCampaigns(data);
             } catch (error) {
                 toast.error("Failed to fetch campaigns");
@@ -27,42 +27,34 @@ const CauseManagement = () => {
     // Function to handle modal open and fetch user details
     const handleView = async (campaign) => {
         setSelectedCampaign(campaign);
-
         try {
-            const user = await getCampaignById(campaign.createdById);
-            console.log("User Data:", user); // Debugging line to log user data
+            const user = await getUserInfo(campaign.createdById);
             setUserData(user);
         } catch (error) {
-            console.error("Failed to fetch user details", error);
             toast.error("Failed to fetch user details");
         }
-
         setShowModal(true);
     };
-
 
     // Function to handle modal close
     const handleCloseModal = () => {
         setShowModal(false);
         setUserData(null);
     };
-
     // Function to handle status update
-    const handleStatusChange = async (status) => {
+    const handleStatusChange = async (campaignId, status) => {
         try {
-            await updateCampaign(selectedCampaign.id, { status });
+            await updateCampaignStatus(campaignId, status);
             setCampaigns((prev) =>
                 prev.map((campaign) =>
-                    campaign.id === selectedCampaign.id ? { ...campaign, status } : campaign
+                    campaign.campaignId === campaignId ? { ...campaign, status } : campaign
                 )
             );
-            toast.success(`Campaign ${status.toLowerCase()} successfully!`);
-            setShowModal(false);
+            toast.success(`Campaign status updated to "${status}" successfully!`);
         } catch (error) {
             toast.error("Failed to update campaign status");
         }
     };
-
     return (
         <div>
             <ToastContainer />
@@ -85,7 +77,29 @@ const CauseManagement = () => {
                                         <tr key={campaign.campaignId}>
                                             <td>{campaign.campaignId}</td>
                                             <td>{campaign.title}</td>
-                                            <td>{campaign.isDeleted ? "Deleted" : campaign.status}</td>
+                                            <td>
+                                                {campaign.isDeleted ? (
+                                                    <Badge bg="dark">Deleted</Badge>
+                                                ) : (
+                                                    <Dropdown>
+                                                        <Dropdown.Toggle
+                                                            variant={
+                                                                campaign.status === "Approved" ? "success" :
+                                                                    campaign.status === "Rejected" ? "danger" : "warning"
+                                                            }
+                                                            size="sm"
+                                                        >
+                                                            {campaign.status}
+                                                        </Dropdown.Toggle>
+                                                        <Dropdown.Menu>
+                                                            <Dropdown.Item onClick={() => handleStatusChange(campaign.campaignId, "Approved")}>Approve</Dropdown.Item>
+                                                            <Dropdown.Item onClick={() => handleStatusChange(campaign.campaignId, "Pending")}>Pending</Dropdown.Item>
+                                                            <Dropdown.Item onClick={() => handleStatusChange(campaign.campaignId, "Rejected")}>Reject</Dropdown.Item>
+                                                            <Dropdown.Item onClick={() => handleStatusChange(campaign.campaignId, "Deleted")} className="text-danger">Delete</Dropdown.Item>
+                                                        </Dropdown.Menu>
+                                                    </Dropdown>
+                                                )}
+                                            </td>
                                             <td>
                                                 <Button
                                                     variant="primary"
@@ -93,7 +107,7 @@ const CauseManagement = () => {
                                                     className="me-2"
                                                     onClick={() => handleView(campaign)}
                                                 >
-                                                    View
+                                                    Contact Campaign Host
                                                 </Button>
                                             </td>
                                         </tr>
@@ -105,7 +119,6 @@ const CauseManagement = () => {
                 </Col>
             </Row>
 
-            {/* Modal for Viewing Campaign Details */}
             {selectedCampaign && (
                 <Modal show={showModal} onHide={handleCloseModal}>
                     <Modal.Header closeButton>
@@ -113,7 +126,7 @@ const CauseManagement = () => {
                     </Modal.Header>
                     <Modal.Body>
                         <img
-                            src={selectedCampaign.image}
+                            src={selectedCampaign.campaignPicture}
                             alt={selectedCampaign.title}
                             className="img-fluid rounded"
                             style={{ height: "200px", objectFit: "cover", width: "100%" }}
@@ -122,31 +135,29 @@ const CauseManagement = () => {
                         {userData && (
                             <div className="mb-3">
                                 <strong>Created By:</strong>
-                                <div className="d-flex align-items-center mt-2">
-                                    <img
-                                        src={userData.image || "https://placehold.co/40"}
-                                        alt={userData.name}
-                                        className="rounded-circle me-2"
-                                        style={{ width: "40px", height: "40px" }}
-                                    />
-                                    <span>{userData.name}</span>
+                                <div className="d-flex justify-content-between align-items-center mt-2">
+                                    {/* User Profile Picture and Name */}
+                                    <div className="d-flex align-items-center">
+                                        {console.log("User Data:", userData) || null}
+                                        <img
+                                            src={userData.profilePicture || "https://placehold.co/40"}
+                                            alt={userData.firstName}
+                                            className="rounded-circle me-2"
+                                            style={{ width: "40px", height: "40px" }}
+                                        />
+                                        <span>{userData.firstName} {userData.lastName}</span>
+                                    </div>
+                                    
+                                    {/* User Email on the Right Side */}
+                                    <div className="text-muted">
+                                        <strong>Email:</strong>
+                                        <small> {userData.email}</small>
+                                    </div>
                                 </div>
                             </div>
-                            
                         )}
+
                     </Modal.Body>
-                    <Modal.Footer>
-                        {!selectedCampaign.isDeleted && (
-                            <>
-                                <Button variant="success" onClick={() => handleStatusChange("Approved")}>
-                                    Approve
-                                </Button>
-                                <Button variant="danger" onClick={() => handleStatusChange("Rejected")}>
-                                    Reject
-                                </Button>
-                            </>
-                        )}
-                    </Modal.Footer>
                 </Modal>
             )}
         </div>
