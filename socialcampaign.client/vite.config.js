@@ -39,11 +39,16 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 // Detect if running in a production environment
 const isProduction = process.env.NODE_ENV === "production";
 
+// ✅ **Fixed API Base URL** ✅
+const apiBaseUrl = isProduction
+    ? "https://socialcampaign-api-feceh0ecded8gfe0.australiaeast-01.azurewebsites.net"
+    : "https://localhost:53328";
+
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [plugin()],
     define: {
-        __API_BASE_URL__: JSON.stringify("https://localhost:53328"),
+        __API_BASE_URL__: JSON.stringify(apiBaseUrl),
     },
     resolve: {
         alias: {
@@ -52,63 +57,8 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/api/AdminApprovals': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/BusinessAds': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/BusinessAds/business': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/business_ads': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/Businesses': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/CampaignLikes': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/Campaigns': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            '^/api/Users': {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            "^/profile_pictures": {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            "^/campaign_pictures": {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            "^/api/Campaigns/bycreator": {
-                target,
-                secure: false,
-                changeOrigin: true,
-            },
-            "^/api": {
-                target,
+            '^/api': {
+                target: apiBaseUrl,
                 secure: false,
                 changeOrigin: true,
             },
