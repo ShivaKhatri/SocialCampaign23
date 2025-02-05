@@ -7,8 +7,9 @@ using SocialCampaign.Server.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DatabaseConnection>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+  builder.Services.AddDbContext<ApplicationDbContext>(options =>
+       options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+           ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
 // Add authentication services for JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
