@@ -29,12 +29,15 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
         'Pem',
         '--no-password',
     ], { stdio: 'inherit', }).status) {
-        throw new Error("Could not create certificate.");
+        console.warn("Skipping certificate creation - Running in production mode.");
     }
 }
 
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
     env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7073';
+
+// Detect if running in a production environment
+const isProduction = process.env.NODE_ENV === "production";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -49,13 +52,11 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            // Proxy routes for AdminApprovals
             '^/api/AdminApprovals': {
                 target,
                 secure: false,
                 changeOrigin: true,
             },
-            // Proxy routes for BusinessAds
             '^/api/BusinessAds': {
                 target,
                 secure: false,
@@ -71,38 +72,37 @@ export default defineConfig({
                 secure: false,
                 changeOrigin: true,
             },
-            // Proxy routes for BusinessAds
             '^/api/Businesses': {
                 target,
                 secure: false,
                 changeOrigin: true,
             },
-            // Proxy routes for CampaignLikes
             '^/api/CampaignLikes': {
                 target,
                 secure: false,
                 changeOrigin: true,
             },
-            // Proxy routes for Campaigns
             '^/api/Campaigns': {
                 target,
                 secure: false,
                 changeOrigin: true,
             },
-            // Proxy routes for Users
             '^/api/Users': {
                 target,
                 secure: false,
                 changeOrigin: true,
-            }, "^/profile_pictures": {
+            },
+            "^/profile_pictures": {
                 target,
                 secure: false,
                 changeOrigin: true,
-            }, "^/campaign_pictures": {
+            },
+            "^/campaign_pictures": {
                 target,
                 secure: false,
                 changeOrigin: true,
-            }, "^ api/Campaigns/bycreator": {
+            },
+            "^/api/Campaigns/bycreator": {
                 target,
                 secure: false,
                 changeOrigin: true,
@@ -114,9 +114,12 @@ export default defineConfig({
             },
         },
         port: 53328,
-        https: {
+        https: isProduction ? false : {
             key: fs.readFileSync(keyFilePath),
             cert: fs.readFileSync(certFilePath),
         }
+    },
+    build: {
+        outDir: "dist" // Ensure output directory matches GitHub Actions config
     }
 });
