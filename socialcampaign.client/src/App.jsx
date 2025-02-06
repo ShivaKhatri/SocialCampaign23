@@ -12,7 +12,7 @@ import BusinessProfile from './Pages/BusinessProfile/BusinessProfile';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer'; // Import the Footer component
 import ProtectedRoute from './components/ProtectedRoute';  // Import the ProtectedRoute component
-import { UserProvider } from './components/context/UserContext';
+// import { UserProvider } from './components/context/UserContext';
 
 //  Missing Imports Added
 import PromotionalManagement from './components/PromotionalManagement/PromotionalManagement';
