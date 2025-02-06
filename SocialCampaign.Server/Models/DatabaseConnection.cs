@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using Pomelo.EntityFrameworkCore.MySql;
 namespace SocialCampaign.Server.Models
 {
     public class DatabaseConnection : DbContext
