@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ChangeInfo from '../../Components/ChangeInfo/ChangeInfo';
-import ChangePasswordProfile from '../../Components/change-password/change-password-profile';
+import ChangeInfo from '../../components/ChangeInfo/ChangeInfo';
+import ChangePasswordProfile from '../../components/change-password/change-password-profile';
 import './BusinessProfile.css';
 import AdsManager from '../../components/AdsManager/AdsManager';
 import BusinessStats from '../../components/BusinessStats/BusinessStats';
