@@ -4,12 +4,18 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using SocialCampaign.Server.Models;
 
+// Add required namespace for Pomelo MySQL integration
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-  builder.Services.AddDbContext<DatabaseConnection>(options =>
-       options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-           ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
+// Add services to the container, with corrected MySQL configuration
+builder.Services.AddDbContext<DatabaseConnection>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
 
 // Add authentication services for JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -24,8 +30,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
             ValidAudience = builder.Configuration["JwtSettings:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-            builder.Configuration["JwtSettings:SecretKey"] ?? throw new InvalidOperationException("JWT SecretKey is missing")))
-
+                builder.Configuration["JwtSettings:SecretKey"] ?? throw new InvalidOperationException("JWT SecretKey is missing")
+            ))
         };
     });
 
@@ -39,11 +45,11 @@ builder.Services.AddSwaggerGen();
 // CORS policy (allow React app to make requests)
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(builder =>
+    options.AddDefaultPolicy(policyBuilder =>
     {
-        builder.WithOrigins("http://localhost:53328")  // Replace with your React app URL
-               .AllowAnyHeader()
-               .AllowAnyMethod();
+        policyBuilder.WithOrigins("http://localhost:53328")  // Replace with your React app URL
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
@@ -67,8 +73,8 @@ app.UseCors();
 app.UseHttpsRedirection();
 
 // Enable authentication and authorization
-app.UseAuthentication();  // Add this to enable JWT authentication
-app.UseAuthorization();   // This is needed for authorization
+app.UseAuthentication();  // Enable JWT authentication
+app.UseAuthorization();   // Enable authorization
 
 // Map controllers for API endpoints
 app.MapControllers();
