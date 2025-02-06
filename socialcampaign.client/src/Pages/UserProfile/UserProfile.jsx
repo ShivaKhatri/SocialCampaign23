@@ -1,10 +1,10 @@
 // src/components/UserProfile/UserProfile.jsx
 
 import React, { useState, useEffect } from "react";
-import ChangeInfo from '../../Components/ChangeInfo/ChangeInfo';
-import ChangePasswordProfile from '../../Components/change-password/change-password-profile';
-import Profile from '../../Components/Profile/Profile';
-import CreateCampaign from '../../Components/campaign/CreateCampaign'; // Adjust the path as needed
+import ChangeInfo from '../../components/ChangeInfo/ChangeInfo';
+import ChangePasswordProfile from '../../components/change-password/change-password-profile';
+import Profile from '../../components/Profile/Profile';
+import CreateCampaign from '../../components/campaign/CreateCampaign'; // Adjust the path as needed
 import './UserProfile.css';
 import { getUserById } from "../../services/userService";
 import { getCampaignsByCreator } from "../../services/campaignService";
