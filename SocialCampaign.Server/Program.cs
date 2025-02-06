@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using SocialCampaign.Server.Models;
-
+using Pomelo.EntityFrameworkCore.MySql;
 // Add required namespace for Pomelo MySQL integration
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
