@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import ChangeInfo from '../../components/ChangeInfo/ChangeInfo';
 import ChangePasswordProfile from '../../components/change-password/change-password-profile';
 import Profile from '../../components/Profile/Profile';
-import CreateCampaign from '../../components/campaign/CreateCampaign'; // Adjust the path as needed
+import CreateCampaign from '../../components/Campaign/CreateCampaign'; // Adjust the path as needed
 import './UserProfile.css';
 import { getUserById } from "../../services/userService";
 import { getCampaignsByCreator } from "../../services/campaignService";
