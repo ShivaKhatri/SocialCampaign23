@@ -1,7 +1,7 @@
 // src/Components/campaign/CreateCampaign.jsx
 
 import React, { useState } from 'react';
-import './createCampaign.css';
+import './CreateCampaign.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { createCampaign } from '../../services/campaignService';
