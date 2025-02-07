@@ -43,10 +43,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // CORS policy (allow React app to make requests)
-// CORS policy (allow frontend to access API)
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policyBuilder =>
+    options.AddPolicy("AllowSpecificOrigins", policyBuilder =>
     {
         policyBuilder.WithOrigins(
             "http://localhost:53328",  // Local React development
@@ -60,7 +59,7 @@ builder.Services.AddCors(options =>
 
 
 var app = builder.Build();
-
+app.UseCors("AllowSpecificOrigins"); 
 // Serve static files (if you have any)
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -73,7 +72,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Enable CORS
-app.UseCors();
+// app.UseCors();
 
 // Enable HTTPS redirection
 app.UseHttpsRedirection();
