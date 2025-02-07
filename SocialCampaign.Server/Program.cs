@@ -43,15 +43,21 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // CORS policy (allow React app to make requests)
+// CORS policy (allow frontend to access API)
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policyBuilder =>
     {
-        policyBuilder.WithOrigins("http://localhost:53328")  // Replace with your React app URL
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+        policyBuilder.WithOrigins(
+            "http://localhost:53328",  // Local React development
+            "https://purple-flower-091134b00.4.azurestaticapps.net"  // Azure deployed frontend
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials(); // Required for authentication
     });
 });
+
 
 var app = builder.Build();
 
