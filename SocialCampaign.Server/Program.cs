@@ -1,15 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using SocialCampaign.Server.Models;
-using Pomelo.EntityFrameworkCore.MySql;
-// Add required namespace for Pomelo MySQL integration
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container, with corrected MySQL configuration
+// Add services to the container
 builder.Services.AddDbContext<DatabaseConnection>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -35,22 +26,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// Add controllers
-builder.Services.AddControllers();
-
-// Add Swagger for API documentation
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-// CORS policy (allow React app to make requests)
-// CORS policy (allow frontend to access API)
+// ✅ **Fix CORS Configuration**
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policyBuilder =>
+    options.AddPolicy("AllowSpecificOrigins", policyBuilder =>
     {
         policyBuilder.WithOrigins(
-            "http://localhost:53328",  // Local React development
-            "https://purple-flower-091134b00.4.azurestaticapps.net"  // Azure deployed frontend
+            "http://localhost:53328",  // Local development
+            "https://purple-flower-091134b00.4.azurestaticapps.net"  // Azure frontend
         )
         .AllowAnyHeader()
         .AllowAnyMethod()
@@ -58,22 +41,21 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 var app = builder.Build();
+
+// ✅ **Apply CORS BEFORE authentication**
+app.UseCors("AllowSpecificOrigins"); // Must be before authentication
 
 // Serve static files (if you have any)
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-// Configure the HTTP request pipeline
+// Enable Swagger for API documentation
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// Enable CORS
-app.UseCors();
 
 // Enable HTTPS redirection
 app.UseHttpsRedirection();
