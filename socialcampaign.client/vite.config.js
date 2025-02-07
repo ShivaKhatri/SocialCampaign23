@@ -33,9 +33,6 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     }
 }
 
-const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
-    env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7073';
-
 // Detect if running in a production environment
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -57,11 +54,19 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/api': {
-                target: apiBaseUrl,
-                secure: false,
-                changeOrigin: true,
-            },
+            // ✅ Restored All Proxy Routes ✅
+            '^/api/AdminApprovals': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/BusinessAds': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/BusinessAds/business': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/business_ads': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/Businesses': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/CampaignLikes': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/Campaigns': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/Users': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/profile_pictures': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/campaign_pictures': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api/Campaigns/bycreator': { target: apiBaseUrl, secure: false, changeOrigin: true },
+            '^/api': { target: apiBaseUrl, secure: false, changeOrigin: true },
         },
         port: 53328,
         https: isProduction ? false : {
