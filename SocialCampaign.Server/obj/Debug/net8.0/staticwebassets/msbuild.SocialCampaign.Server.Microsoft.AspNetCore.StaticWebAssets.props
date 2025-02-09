@@ -180,6 +180,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\990c1883-6b88-4b35-a5ef-d43a807435a7_2020-08-31.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\a7949d7a-c8fd-4a58-934a-8bb288edadf3_cranky shit.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>business_ads/a7949d7a-c8fd-4a58-934a-8bb288edadf3_cranky shit.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cs349vbqov</Fingerprint>
+      <Integrity>1F6QNmdDd5iIDEqF+hXKIegRK7cfWHiHRQCsFF5N3GQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\a7949d7a-c8fd-4a58-934a-8bb288edadf3_cranky shit.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\a9d1142a-afdb-4d2f-9622-73aaf358303a_gannt chart.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>business_ads/a9d1142a-afdb-4d2f-9622-73aaf358303a_gannt chart.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h0odios44</Fingerprint>
+      <Integrity>l7JV76/sk0uQo/2QzD1Nq3pokyjaU9zzeRl6ZyZjjm0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\a9d1142a-afdb-4d2f-9622-73aaf358303a_gannt chart.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\business_ads\b900cd02-5dce-48f7-ad45-e61cb942e522_Screenshot 2025-01-29 124349.png'))">
       <SourceType>Package</SourceType>
       <SourceId>SocialCampaign.Server</SourceId>
@@ -1080,6 +1116,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\campaign_pictures\da026072-91d3-41b8-a7e8-c2013526dd11_Screenshot 2025-01-29 080808.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\campaign_pictures\df3e7c8b-95af-4263-afc1-616bd07351f2_2020-08-31.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>campaign_pictures/df3e7c8b-95af-4263-afc1-616bd07351f2_2020-08-31.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7llh7wgije</Fingerprint>
+      <Integrity>i+6AYrLE7gY9iuxIRINuaPQK6f5OtlB/Fbsrz+Lpz7w=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\campaign_pictures\df3e7c8b-95af-4263-afc1-616bd07351f2_2020-08-31.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\campaign_pictures\e4fa00b0-d6f4-4dbc-bf22-f7de79a06eb3_cranky shit.png'))">
       <SourceType>Package</SourceType>
       <SourceId>SocialCampaign.Server</SourceId>
@@ -1260,6 +1314,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\4e125782-f49b-4952-a9dd-72f017a48a54_cranky shit.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\677cbb33-8588-434e-ae10-e17c96161dc1_2020-08-31 (2).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>profile_pictures/677cbb33-8588-434e-ae10-e17c96161dc1_2020-08-31 (2).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3hdqrf4eq6</Fingerprint>
+      <Integrity>tx0cWakPKboQBAEkF006RbcvuE2aiIW3MiqVykKbK4Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\677cbb33-8588-434e-ae10-e17c96161dc1_2020-08-31 (2).png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\6f479c89-32ec-434c-881e-15ad7535af68_133801603101299118.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>SocialCampaign.Server</SourceId>
@@ -1385,6 +1457,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\c860383a-b7cd-4c0f-86cd-b9cb0ecc9bf6_cranky shit.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\e9054899-76e2-490e-aed2-e5cbdaa7939b_Screenshot 2025-01-22 121145.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>SocialCampaign.Server</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/SocialCampaign.Server</BasePath>
+      <RelativePath>profile_pictures/e9054899-76e2-490e-aed2-e5cbdaa7939b_Screenshot 2025-01-22 121145.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b55foiybbo</Fingerprint>
+      <Integrity>z0e57607DGZbTcKqFh+Q6FwyrzkntKspvbW4YY5PDTE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\e9054899-76e2-490e-aed2-e5cbdaa7939b_Screenshot 2025-01-22 121145.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\profile_pictures\ea241021-da0e-4cfe-ac19-125519c8e38b_Screenshot 2025-01-29 124451.png'))">
       <SourceType>Package</SourceType>

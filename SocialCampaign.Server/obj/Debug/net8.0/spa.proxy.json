@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:53328",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\shiva\\OneDrive\\Desktop\\Stage 3\\SocialCampaign\\SocialCampaign\\SocialCampaign.Server\\..\\socialcampaign.client",
+"WorkingDirectory": "C:\\Users\\Admin\\_SocialCampaign23\\SocialCampaign.Server\\..\\socialcampaign.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }
